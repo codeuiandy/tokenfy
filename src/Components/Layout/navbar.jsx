@@ -18,6 +18,7 @@ export const  Navbar=(props)=> {
               {locat === '/cupons'?'Coupon':""}
               {locat === '/create_cupons'?'Coupon':""}
               {locat === '/qrcoupons'?'QR Coupons':""}
+              {locat === '/admin'?'Admins':""}
             </span>
             <span>
               {locat === '/cupons'?'Create Coupon':""}
