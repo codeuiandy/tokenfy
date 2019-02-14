@@ -39,18 +39,25 @@ export const Sidebar=()=> {
 
   <li className="sidebarHeader-list icon-dashboard"  
   onClick={()=>{setDropdows({...toggleDropDowns,option1:!toggleDropDowns.option1})}}>
-    Dashboard</li>
-  {/* {
+    <Link to="/dashboard">Dashboard</Link></li>
+  { 
     toggleDropDowns.option1===true?(<ul className="subSidbar-Details">
-     <li className="subSidbar-Details-child">work in progress</li>
-     <li className="subSidbar-Details-child">work in progress</li>
-     <li className="subSidbar-Details-child">work in progress</li>
+     <li className="subSidbar-Details-child">Users</li>
+     <li className="subSidbar-Details-child">Merchants</li>
     </ul>):""
-  } */}
+  } 
 
   <li className="sidebarHeader-list icon-coupons"><Link to="/cupons">Coupons</Link></li>
   <li className="sidebarHeader-list icon-review"><Link to="/reviews">Reviews</Link></li>
-  <li className="sidebarHeader-list icon-admin">Admins</li>
+  <li className="sidebarHeader-list" onClick={()=>{setDropdows({...toggleDropDowns,option2:!toggleDropDowns.option2})}}><Link to="/admin">Admin</Link></li>{
+    toggleDropDowns.option2===true?(
+    <ul className="subSidbar-Details">
+      <li className="subSidbar-Details-child">My Tasks</li>
+      <li className="subSidbar-Details-child">Create Tasks</li>
+      <li className="subSidbar-Details-child">View Admins</li>
+    </ul>
+    ):""
+  }
   <li className="sidebarHeader-list icon-qr"><Link to="/qrcoupons">QR Coupons</Link></li>
   <hr />
   <li className="sidebarHeader-list icon-settings">Settings</li>
