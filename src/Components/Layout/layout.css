@@ -187,10 +187,9 @@ cursor: pointer;
   letter-spacing: 0em;
   text-align: left;
   color: white;
-  padding: 10px;
+  padding: 10px 0px 10px 30px;
   border-left: none;
   border-right: none;
-  padding-left: 30px;
   margin:15px 0;
 }
 
@@ -333,7 +332,7 @@ hr{
 /* Sidebar Icons */
 .icon-dropdown{
   background-image: url('../Assets/arrowDown.png');
-  background-position: right center;
+  background-position: center right;
   background-repeat: no-repeat;
-  padding-left: 0px; /* Adjust according to image size to push text across. */
+  padding-left:0px; /* Adjust according to image size to push text across. */
 }
