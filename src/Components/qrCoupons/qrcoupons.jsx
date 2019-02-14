@@ -167,8 +167,20 @@ export default function QrCoupons(props) {
                                         <div className="inputbox-cupon">
                                             <textarea type="text"/>
                                             <span className="cuponTextCount">500 <span>Characters left.</span></span>
-                                        </div>
+                                    </div>
                                         
+                            </div>
+                            <div className=
+                            "availableDocs ccupon-input-box textareaCo ">
+                                <div>Already have a document having all these details?</div>
+                                <div class="docUploadArea">
+                                    <div class="uploadIcon">
+                                    {/* Thought to use arrow down icon as placeholder */}
+                                        <img src={ArrowDown} alt=""/>
+                                    </div>
+                                    <div>
+                                    <span>Upload any file</span> (jpg, .docx,.pptx)</div>
+                                </div>
                             </div>
             
                     
