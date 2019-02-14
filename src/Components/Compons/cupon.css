@@ -347,9 +347,6 @@ color: rgba(128, 128, 128, 0.568);
     color:
     white;
 }
-m-5{
-    margin:1em 0;
-}
 .file_upload{
     display:flex;
     flex-direction: row;
@@ -444,3 +441,29 @@ color: #838690;
     padding: 10px 30px 10px 30px;
     cursor: pointer;
    }
+.docUploadArea{
+    display:flex;
+    border-radius:5px;
+    flex-direction: row;
+    justify-items: baseline;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: #edf1fe;
+    padding:15px 0;
+    height: 50px;
+    width:100%;
+    margin-top:1rem;
+}
+.docUploadArea div{
+    margin:0 10px;
+}
+.uploadIcon{
+    padding:0 10px;
+}
+.docUploadArea>div:nth-child(2){
+    font-size:12px;
+    color:rgba(128, 128, 128, 0.685);
+}
+.docUploadArea span{
+    color:#2D3EF5;
+}
