@@ -9,6 +9,8 @@ import Reviews from './Components/Reviews/reviews'
 import QrCoupons from './Components/qrCoupons/qrcoupons'
 import Admin from './Components/Admins/admins'
 import Dashboard from './Components/Dashboard/dashboard'
+import User from './Components/Dashboard/user'
+import Merchants from './Components/Dashboard/merchants'
 import "./App.css";
 class App extends Component {
 	render() {
@@ -25,7 +27,8 @@ class App extends Component {
 		  <Route exact="/qrcoupons" path="/qrcoupons" component={QrCoupons} />
 		  <Route exact="/admin" path="/admin" component={Admin} />
 		  <Route exact="/dashboard" path="/dashboard" component={Dashboard}/>
-		  
+		  <Route exact="/user" path="/user" component={User}/>
+		  <Route exact="/merchants" path="/merchants" component={Merchants}/>
 					<Route path="*" component={NotFound} />
 				</Switch>
 			</Router>
