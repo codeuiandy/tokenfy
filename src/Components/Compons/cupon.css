@@ -1,0 +1,119 @@
+.pg-dimacation{
+    width: 90%;
+    height: 1px;
+    background-color: rgba(131, 134, 144, 0.17);
+    margin-top: 20px;
+}
+
+.page-roter-list div{
+    display: flex;
+    margin-right: 20px;
+}
+
+.page-router-name
+{
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1E253A;
+    display: block;
+    cursor: pointer;
+}
+
+.page-router-name-active
+{
+
+    display: block;
+    cursor: pointer;
+    transition: all 500ms ease-in forwards;
+}
+
+.page-router-name-active::after{
+    content: "";
+width: 70px;
+background-color: #2D4EF5;
+height: 3px;
+display: block;
+position: relative;
+top: 20px;
+}
+
+.create-cupon-page{
+    width: 100%;
+}
+
+.inputbox-cupon{
+    position: relative;
+    width: 90%;
+}
+
+.inputbox-cupon .icon{
+  position: absolute;
+  top: 7px;
+  right: 12px;
+  
+}
+
+.create-conpon-container{
+    display: flex;
+    width: 93%;
+    justify-content: space-between;
+}
+.create-conpon-container .cupon-input-box {
+    width: 100%;
+    margin-top: 20px;
+    }
+.create-conpon-container .cupon-input-box input{
+width: 100%;
+background: #FFFFFF;
+border: 1px solid rgba(45, 78, 245, 0.08);
+box-sizing: border-box;
+border-radius: 5px;
+height: 40px;
+position: relative;
+}
+
+.create-conpon-container .cupon-input-box input:focus{
+
+    border: 1px solid blue;
+
+    }
+
+    .create-conpon-container .cupon-input-box label{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        color: #000000;
+        margin-left: 6px;
+        }
+
+        .create-conpon-container .cupon-input-box label span{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 33px;
+            color: #F28F8F;
+            }
+
+            .create-conpon-container .cupon-input-box select:focus{
+
+                border: 1px solid blue;
+            
+                }
+
+            .create-conpon-container .cupon-input-box  select {
+                width: 100%;
+                padding: 5px 90px 5px 5px;
+                font-size: 16px;
+                background-color: #FFFFFF;
+                border: 1px solid rgba(45, 78, 245, 0.08);
+                box-sizing: border-box;
+                border-radius: 5px;
+                height: 40px;
+                position: relative;
+                background: url('../Assets/arrowDown.png') no-repeat right #FFFFFF;
+                -webkit-appearance: none;
+                background-position-x: 90%;
+            }
+           

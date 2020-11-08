@@ -1,0 +1,103 @@
+#ApiHeader{
+  width: 80%;
+}
+
+
+#ApiHeader h1{
+  font-family: Gotham;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 17px;
+letter-spacing: 0em;
+color: #EF4923;
+margin-bottom: 20px;
+
+}
+
+
+#ApiHeader h3{
+  font-family: Gotham;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+
+#ApiHeader p{
+  font-family: Gotham;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #717373;
+margin-top: 20px;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 53px;
+  height: 24px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 5px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switch input:checked + .slider {
+  background-color: #25BB0C;
+}
+
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px #25BB0C;
+}
+
+.switch input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
