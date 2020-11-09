@@ -1,0 +1,249 @@
+.login-wrap{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.login-left-image{
+    background-image: url('../Assets/loginBackground.png');
+    height: 100vh;
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-details-input-wrap{
+    background: #E5E5E5;
+    height: 100vh;
+    width: 50vw;
+    padding: 50px 20px 20px 70px;
+}
+
+.login-logo{
+    display: flex;
+    width: 80%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-logo-icon{
+    background-image: url('../Assets/favIcon.png');
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.login-logo-icon-text{
+    background-image: url('../Assets/TOKENFY@2x.png');
+    width: 100px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.login-header{
+    margin-top: 50px;
+}
+
+.login-header h1{
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 50px;
+margin: 0;
+padding: 0;
+}
+
+.login-header h2{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: #838690;
+    margin-top: -3px;
+    margin-bottom: 40px;
+    }
+
+    .login-input-wrap{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+
+    .login-input-wrap label{
+        color: #838690;
+        margin-left: 5px;
+        font-size: 17px;
+        margin-bottom: 7px;
+        
+    }
+
+    .login-input-wrap input{
+        width: 80%;
+        height: 52px;
+        background: #FFFFFF;
+        border: 1px solid rgba(45, 78, 245, 0.08);
+        box-sizing: border-box;
+        border-radius: 8px;
+    }
+
+    .forgot_password_link{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 80%;
+        
+    }
+
+    .forgot_password_link span{
+        font-size: 16px;
+        line-height: 24px;
+        color: #2D4EF5;
+         margin-top: -25px;
+
+    }
+
+    .submit-login-details{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .submit-login-details button{
+        width: 100%;
+        height: 52px;
+        background: #2D4EF5;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .dont_have_account-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        width: 80%;
+    }
+
+    .dont_have_account-container span:first-child{
+        font-size: 18px;
+        line-height: 25px;
+        color: #838690
+    }
+
+    .dont_have_account-container span:last-child{
+        font-size: 18px;
+        line-height: 25px;
+        color:  #2D4EF5;
+        margin-left: 5px;
+    }
+
+    .login-input-wrap-with-two-inpu{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    .two-inputs-login{
+        width: 47%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .two-inputs-login label{
+        color: #838690;
+        margin-left: 5px;
+        font-size: 17px;
+        margin-bottom: 7px;
+    }
+
+    .two-inputs-login input{
+        height: 52px;
+        background: #FFFFFF;
+        border: 1px solid rgba(45, 78, 245, 0.08);
+        box-sizing: border-box;
+        border-radius: 8px;
+    }
+
+    .create-account-details{
+        padding: 50px 20px 20px 90px ;
+    }
+
+    @media(max-width:892px){
+        .login-left-image{
+            background-position: center;
+            width: 40vw;
+
+        }
+        
+        .login-details-input-wrap{
+
+            width: 60vw;
+            padding: 50px 10px 20px 50px;
+        }
+
+        .create-account-details{
+            
+            width: 60vw;
+            padding: 50px 10px 20px 50px;
+        }
+    }
+
+    @media(max-width:892px){
+        .login-left-image{
+         display: none;
+
+        }
+        
+        .login-details-input-wrap{
+            width: 100vw;
+            padding: 50px ;
+        }
+
+        .login-logo{
+            width: 100%;
+        }
+
+        .login-input-wrap input{
+            width: 100%;
+        }
+
+        .login-input-wrap-with-two-inpu{
+            width: 100%;
+        }
+
+        .submit-login-details{
+            width: 100%;
+        }
+
+        .forgot_password_link{
+            width: 100%;
+        }
+
+        .dont_have_account-container{
+            width: 100%;
+        }
+    }
+
+    @media(max-width:400px){
+
+        
+        .login-details-input-wrap{
+
+            padding:  50px 20px 20px 20px;
+        }
+        .login-header{
+            margin-top: 20px;
+        }
+    }

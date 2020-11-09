@@ -1,0 +1,326 @@
+#apiDocs{
+  background: white;
+  position: fixed;
+  width: calc(100vw - 162px);
+  height: 75px;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+  padding: 10px 60px 0 0px;
+}
+
+#apiDocs .routes-links{
+  margin-left: auto;
+
+}
+
+#apiDocs .routes-links ul {
+display: flex;
+justify-content: center;
+align-self: center;
+padding-top: 10px;
+  }
+
+#apiDocs .routes-links ul li{
+list-style-type: none;
+margin-right: 15px;
+
+}
+
+.navbar-notifications{
+  background-image: url('../Assets/bellIcon.png');
+  width: 40px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 14px !important;
+  margin-right: 0 !important;
+}
+
+.nav-route-id span:first-child{
+ border-right: 2px solid rgba(131, 134, 144, 0.432);
+  padding-right: 10px;
+}
+
+.nav-route-id span:last-child{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2D4EF5;
+  padding-left: 7px;
+ }
+
+.nav-route-id span{
+  font-weight: 600;
+font-size: 30px;
+line-height: 9px;
+color: #1E253A;
+
+}
+
+.user-profile-pic{
+  background-image: url('../Assets/user.png');
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+}
+
+.user-name-pic{
+  font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+color: #1E253A;
+margin-top: 15px;
+}
+
+#apiDocs .navRoutes span{
+  padding-right: 20px;
+  font-weight: 600;
+  font-family: Gotham;
+font-size: 17px;
+font-style: normal;
+font-weight: 700;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+#apiDocs .navRoutesActions{
+  padding-right: 120px;
+}
+
+#apiDocs .navRoutesActions button:last-child{
+  width: 83px;
+  height: 35px;
+  left: 1231px;
+  top: 31px;
+  background: #EF4923;
+  color: white;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#apiDocs .navRoutesActions button:first-child{
+  width: 83px;
+  height: 35px;
+  left: 1231px;
+  top: 31px;
+  background: transparent;
+  color: #C4C4C4;
+cursor: pointer;
+}
+
+#apiDocs .navRoutesLogo{
+  padding-left: 5px;
+  margin-left: 64px;
+}
+
+#apiDocsWrap{
+  width: calc(100vw - 110px);
+  height: calc(100vh - 75px);
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+
+}
+
+#apiDocsWrap .generalPadding{
+  padding-left: 120px;
+  padding-top:27px;
+}
+
+.apiDocsIde{
+  position: fixed;
+  height: 100vh ;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  background: #0C2556;
+  z-index: 5;
+}
+
+@media(max-width:906px){
+  #apiDocs .navRoutes{
+    margin-right: auto;
+    padding-left: 100px;
+  }
+
+  
+#apiDocs .navRoutesActions{
+  padding-right: 20px;
+}
+
+  
+  #apiDocsWrap .generalPadding{
+    padding-left: 120px;
+    padding-top: 40px;
+  }
+}
+
+.ApisideDropdown{
+  list-style-type: none;
+  padding: 0;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-top: 30px;
+  margin-left: 0;
+}
+
+.ApisideDropdown .sidebarHeader-list{
+  font-family: Gotham;
+  cursor: pointer;
+font-size: 13px;
+font-style: normal;
+font-weight: 600;
+line-height: 13px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+padding: 10px;
+border-left: none;
+    border-right: none;
+    padding-left: 22px;
+}
+
+.subSidbar-Details{
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+.subSidbar-Details .subSidbar-Details-child{
+  font-family: Gotham;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 11px;
+letter-spacing: 0em;
+text-align: left;
+margin-left: 30px;
+margin-bottom: 10px;
+letter-spacing: 1px;
+border: none;
+color: white;
+cursor: pointer;
+}
+
+#apiDocs .navRoutesActions{
+  display: none;
+}
+
+@media(max-width:611px){
+  #apiDocs .navRoutesActions{
+    display: block;
+  }
+  
+  #apiDocs {
+    justify-content: left;
+    width: 100vw;
+  }
+
+  #apiDocs .navRoutes{
+  display: none;
+  }
+
+  #apiDocs .navRoutesActions{
+  margin-left: 5px;
+  }
+
+
+  #apiDocsWrap{
+    width: 100vw;
+    background: #E5E5E5;
+    height: calc(100vh - 75px);
+  
+  
+  }
+
+  #apiDocsWrap .generalPadding{
+    padding-left: 20px;
+    padding-top: 40px;
+  }
+
+
+  .apiDocsIde{
+width: 60vw;
+    z-index: 8;
+  }
+
+  .apiDocsOpenSidebar{
+   animation: showbar 500ms ease-in forwards;
+  }
+
+  .apiDocsCloseSidebar{
+    animation: hidebar 500ms ease-out forwards;
+   }
+
+  @keyframes showbar {
+    0%{
+      transform: translateX(-500px);
+    }
+
+    100%{
+      transform: translateX(0);
+    }
+  }
+
+
+  @keyframes hidebar {
+    0%{
+      transform: translateX(0);
+    }
+
+    100%{
+      transform: translateX(-500px);
+    }
+  }
+.initSidebarState{
+  transform: translateX(-500px);
+}
+#ApiHeader{
+  width: 95%;
+}
+
+.navRoutesLogo {
+  margin-left: 0 !important;
+}
+
+}
+
+
+@media(max-width:325px){
+ 
+#apiDocs .navRoutesActions button:last-child{
+  width: 60px;
+  margin-left: 10px;
+ 
+}
+
+#apiDocs .navRoutesActions button:first-child{
+  width: 60px;
+
+ 
+}
+
+#apiDocs .navRoutesLogo img{
+width: 70px;
+margin-left: 13px;
+}
+
+
+#apiDocsWrap .generalPadding{
+
+  padding-top: 10px;
+}
+
+
+}
