@@ -5,10 +5,11 @@ import img1 from './img1.png'
 import img2 from './img.png'
 export const  Navbar=(props)=> {
   let [sidebarState, setSidebarState] = useRecoilState(toggleSidebar)
+  const locat = props.NavRouter
   return (
     <React.Fragment>
-      {console.log(props)}
-
+      {console.log(">>>>>gets here",props.NavRouter)}
+         
 
           <div style={{position:"relative"}}>
          <div id="apiDocs">
@@ -16,7 +17,11 @@ export const  Navbar=(props)=> {
         <nav className="nav-route-id">
             <span>Coupons</span>
             <span>Create Coupon</span>
+            {
+            locat === "/test"?"working":""
+          }
           </nav>
+         
         </div>
 
         <div className="routes-links">
