@@ -40,4 +40,11 @@ a:hover{
 select{
   border: none;
   outline: none;
+  padding-left: 10px;
+  outline: none;
+}
+
+textarea{
+  padding-left: 10px;
+  outline: none;
 }

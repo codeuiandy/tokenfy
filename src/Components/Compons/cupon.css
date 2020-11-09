@@ -5,9 +5,22 @@
     margin-top: 20px;
 }
 
+.page-roter-list {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
 .page-roter-list div{
     display: flex;
     margin-right: 20px;
+}
+
+.create_cupon-btn button{
+    background: #2D4EF5;
+    border-radius: 8px;
+    padding: 11px 30px 11px 30px;
+    color: white;
 }
 
 .page-router-name
@@ -57,9 +70,10 @@ top: 20px;
 }
 
 .create-conpon-container{
-    display: flex;
     width: 93%;
-    justify-content: space-between;
+    --auto-grid-min-size: 16rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
 }
 .create-conpon-container .cupon-input-box {
     width: 100%;
@@ -74,11 +88,31 @@ border-radius: 5px;
 height: 40px;
 position: relative;
 }
+.react-datepicker-wrapper{
+    width: 100%;
+}
+.create-conpon-container .cupon-input-box .react-datepicker__input-container input{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid rgba(45, 78, 245, 0.08);
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 40px;
+    position: relative;
+    }
 
 .create-conpon-container .cupon-input-box input:focus{
 
     border: 1px solid blue;
 
+    }
+
+    .cupon-text-area-box label{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        color: #000000;
+        margin-left: 6px;
     }
 
     .create-conpon-container .cupon-input-box label{
@@ -95,6 +129,13 @@ position: relative;
             line-height: 33px;
             color: #F28F8F;
             }
+
+            .cupon-text-area-box .cupon-input-box label span{
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 33px;
+                color: #F28F8F;
+                }
 
             .create-conpon-container .cupon-input-box select:focus{
 
@@ -116,4 +157,99 @@ position: relative;
                 -webkit-appearance: none;
                 background-position-x: 90%;
             }
+
+            .cupon-text-area-box{
+                width: 96%;
+    --auto-grid-min-size: 40%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+                margin-top: 15px;
+            }
+
+            .textareaCon{
+                width: 100%;
+            }
            
+
+            .cupon-input-box textarea{
+                width: 100%;
+                background: #FFFFFF;
+                border: 1px solid rgba(45, 78, 245, 0.08);
+                box-sizing: border-box;
+                border-radius: 5px;
+                height: 224px;
+            position: relative;
+            }
+
+            .textareaCon .cuponTextCount{
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 21px;
+                margin-left: 5px;
+                color: #2D4EF5;
+            }
+
+            .textareaCon .cuponTextCount span{
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 21px;
+                
+                color: #687bd885;
+            }
+
+            .cupon-input-box textarea:focus{
+
+                border: 1px solid blue;
+            
+                }
+
+                .submit-cupon-button{
+                    display: flex;
+                    width: 92%;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    margin-bottom: 40px;
+                    margin-top: 15px;
+                }
+
+                .submit-cupon-button button{
+                    border-radius: 8px;
+                    padding: 10px 40px 10px 40px;
+                    margin-right: 20px;
+                    
+                }
+
+                .InactivaeSubmit-cupon{
+                    
+                background: #EBEBEB;
+                color: white;
+                }
+
+                .activaeSubmit-cupon{
+                    background: #2D4EF5;
+                    color: white;
+                    }
+
+                    @media(max-width:400px){
+
+                        .create-conpon-container{
+                            width: 100%;
+                            --auto-grid-min-size: 16rem;
+                            display: grid;
+                            grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+                        }
+
+                        .cupon-text-area-box{
+                            width: 93%;
+                --auto-grid-min-size: 100vw;
+                        }
+
+                        .submit-cupon-button{
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                    }
+
+                    
+            
