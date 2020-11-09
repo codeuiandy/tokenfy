@@ -4,7 +4,10 @@ import Login from './Components/Login/Login'
 import CreateAccount from './Components/Login/CreateAccount'
 import NotFound from './NotFound'
 import CreateCupons from './Components/Compons/create-cupon'
-import Cupons from './Components/Compons/cupons'
+import Cupons from './Components/Compons/cupons';
+import AdminTasks from './Pages/Admins/admin-tasks';
+import CreateTask from './Pages/Admins/create-task';
+import AdminList from './Pages/Admins/admin-list';
 import "./App.css";
 class App extends Component {
 	render() {
@@ -13,12 +16,13 @@ class App extends Component {
 				{/* <NotificationContainer /> */}
 				<Switch>
 					<Route exact="/" path="/" component={Login}/>
-          <Route exact="/login" path="/login" component={Login}/>
-          <Route exact="/create_account" path="/create_account" component={CreateAccount}/>
-          <Route exact="/create_cupons" path="/create_cupons" component={CreateCupons}/>
-		  <Route exact="/cupons" path="/cupons" component={Cupons}/>
-		 
-		  
+					<Route exact="/login" path="/login" component={Login}/>
+					<Route exact="/create_account" path="/create_account" component={CreateAccount}/>
+					<Route exact="/create_cupons" path="/create_cupons" component={CreateCupons}/>
+					<Route exact="/cupons" path="/cupons" component={Cupons}/>
+					<Route exact="/admin-tasks" path="/admin-tasks" component={AdminTasks} />
+					<Route exact="/admin-task" path="/create-task" component={CreateTask} />
+					<Route exact="/admin-list" path="/admin-list" component={AdminList} />
 					<Route path="*" component={NotFound} />
 				</Switch>
 			</Router>

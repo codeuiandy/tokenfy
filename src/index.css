@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -8,9 +8,9 @@ body {
   margin: 0;
   padding: 0;
   background: #E5E5E5;
-}
+} */
 *{
-  font-family: Sofia Pro;
+  font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -47,4 +47,99 @@ select{
 textarea{
   padding-left: 10px;
   outline: none;
+}
+
+li.sidebar-logo {
+  color: #516DE4;
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-left: 1.3rem;
+  margin-bottom:7rem;
+}
+li.sidebar-menu {
+  color: white;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+.sidebar-icon-container {
+  height: auto;
+  width: 16px;
+  margin: 2px 15px;
+  display: inline-block;
+}
+img.sidebar-icon {
+  width: 100%;
+  height: auto;
+}
+h4.bold-550,h3.bold-550,h5.bold-550,h6.bold-550,label.bold-550,p.bold-550 {
+  font-weight: 550;
+}
+div.menu-item {
+  text-align: center;
+}
+span.sidebar-menu-title {
+  cursor: pointer;
+}
+
+button.btn.btn-success {
+  background-color: #1C9E61;
+  padding: 15px;
+  min-width: 141px;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+span.sidebar-icon-container.fa {
+  color: #72819d;
+}
+.card{
+  padding: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+.small.text-warning {
+  color: #FFA866!important;
+  font-size: small;
+  font-weight: 550;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #516DE4;
+  border-color: #516DE4;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(2.5em + .75rem + 2px);
+  padding: 0.375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+select.form-control {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+.form-control::focus{
+  border: 1px solid #3478f7;
+}
+span.fa.fa-angle-down.select-arrow {
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  color: #348cf8;
+  font-size: 1.4rem;
 }
