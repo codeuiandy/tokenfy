@@ -5,13 +5,14 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import ArrowDown from '../Assets/arrowDown.png'
 import calendar from '../Assets/calendar.png'
-export default function CreateCupon() {
-    const [activePage, setActivePage] = useState("Coupon_Properties")
+import Remove from '../Assets/close.png'
+export default function CreateCupon(props) {
+    const [activePage, setActivePage] = useState("Images_and_videos")
     const [startDate, setstartDate] = useState(new Date())
     
     return (
         <div>
-            <Layout>
+            <Layout NavRouter={props.location.pathname}>
                 <div className="page-router-display">
 
                     <div className="page-roter-list">
@@ -39,7 +40,10 @@ export default function CreateCupon() {
 
                 </div>
 
-                <div className="create-cupon-page">
+
+                {
+                    activePage==="Coupon_Properties" ? (
+                        <div className="create-cupon-page">
 
                         <div className="create-conpon-container">
 
@@ -180,7 +184,8 @@ export default function CreateCupon() {
                                     </div>
                                     
                         </div>
-
+          
+                
             </div>
 
 
@@ -194,9 +199,100 @@ export default function CreateCupon() {
 
                        
 
-
                             
+            </div>
+                        
+                    ) :
+                    
+                    
+                    ""
+                }
+
+              
+
+            {
+                activePage==="Images_and_videos"?
+                
+                <div>
+                <div className="upload_form">
+                    <div className="dragDropArea upload_col">
+                        <form className="uploadCuponImage">
+                            <span>Drag and drop file here</span>
+                            <div className="upload97">or</div>
+                    
+                            <button className="uploadCupon-file" >Upload</button>
+                            <input  type="file" name="pictures"/>
+                        </form>
+                    </div>
+    
+                    <div class="upload_col viewUploadsv">
+
+                        <div className="fileUploadinfo">
+                            <h1>You can only upload not more than 2 files </h1>
+                       <h2>(JPEG, MP4 of not more than 10MB)</h2>
+                        </div>
+
+                        <div className="uploads-section">
+                            <h1>Uploads</h1>
+                        </div>
+                       
+
+                       <div className="viewUploads">
+                           <div className="fileType">Mp4</div>
+                           <div className="fileName">
+                               <div>Video 334523_23</div>
+                               <div>8mb</div>
+                           </div>
+                           <div className="RemoveFile">
+                               <img src={Remove} alt="" srcset=""/>
+                           </div>
+                       </div>
+
+                       <div className="viewUploads">
+                           <div className="fileType">Mp4</div>
+                           <div className="fileName">
+                               <div>Video 334523_23</div>
+                               <div>8mb</div>
+                           </div>
+                           <div className="RemoveFile">
+                               <img src={Remove} alt="" srcset=""/>
+                           </div>
+                       </div>
+
+
+                       <div className="viewUploads">
+                           <div className="fileType">Mp4</div>
+                           <div className="fileName">
+                               <div>Video 334523_23</div>
+                               <div>8mb</div>
+                           </div>
+                           <div className="RemoveFile">
+                               <img src={Remove} alt="" srcset=""/>
+                           </div>
+                       </div>
+
+                       <div className="viewUploads">
+                           <div className="fileType">Mp4</div>
+                           <div className="fileName">
+                               <div>Video 334523_23</div>
+                               <div>8mb</div>
+                           </div>
+                           <div className="RemoveFile">
+                               <img src={Remove} alt="" srcset=""/>
+                           </div>
+                       </div>
+
+
+                       
+                    </div>
                 </div>
+                <div className="submit-cupon-button">
+                    <button className="activaeSubmit-cupon">Preview</button>
+                    <button className="publish_button">Publish</button>
+                </div>
+            </div>
+            :""
+        }
             </Layout>
         </div>
     )
