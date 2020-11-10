@@ -8,8 +8,6 @@ export const  Navbar=(props)=> {
   const locat = props.NavRouter
   return (
     <React.Fragment>
-      {console.log(">>>>>gets here",props.NavRouter)}
-         ``
 
           <div style={{position:"relative"}}>
          <div id="apiDocs">
@@ -19,10 +17,12 @@ export const  Navbar=(props)=> {
               {locat === '/reviews'?'Reviews':""}
               {locat === '/cupons'?'Coupon':""}
               {locat === '/create_cupons'?'Coupon':""}
+              {locat === '/qrcoupons'?'QR Coupons':""}
             </span>
             <span>
               {locat === '/cupons'?'Create Coupon':""}
               {locat === '/create_cupons'?'Create Coupon':""}
+              {locat === '/qrcoupons'?'Create Coupons':""}
             </span>
           </nav>
          
