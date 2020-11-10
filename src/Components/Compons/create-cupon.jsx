@@ -180,7 +180,7 @@ export default function CreateCupon(props) {
                                     </div>
                                     
                         </div>
-
+          
                 
             </div>
 
@@ -196,6 +196,35 @@ export default function CreateCupon(props) {
                        
 
                             
+            </div>
+
+            <div>
+                <div className="container upload_form">
+                    <div className="dragDropArea upload_col">
+                        <form>
+                            <input  type="file" name="pictures"/>
+                            <button className="">Upload</button>
+                        </form>
+                    </div>
+    
+                    <div class="upload_col">
+                        <h4>You can only upload not more than 2 files<br/> <span class="font-weight-light">(JPEG,MP4 of not more than 10MB)</span> </h4>
+    
+                        <h4 className="font-weight-bold">UPLOADS</h4>
+                        <div className="file_upload">
+                            <h4>Video 332132_23</h4>
+                            <p>8mb</p>
+                        </div>
+                        <div className="file_upload">
+                            <h4>Image</h4>
+                            <p>8mb</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="submit-cupon-button">
+                    <button className="activaeSubmit-cupon">Preview</button>
+                    <button className="publish_button">Publish</button>
+                </div>
             </div>
             </Layout>
         </div>

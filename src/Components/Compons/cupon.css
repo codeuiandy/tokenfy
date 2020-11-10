@@ -250,3 +250,40 @@ position: relative;
                         }
 
                     }
+.dragDropArea{
+    display:flex;
+    height:500px;
+    width:500px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.upload_form{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.upload_col{
+    margin:0 15px;
+}
+.upload_col h4{
+    font-size:15px;
+}
+.font-weight-bold{
+    font-weight: bold;
+}
+.font-weight-light{
+    font-weight:300;
+}
+.publish_button{
+    background:
+    #009e61;
+    border-radius: 8px;
+    padding: 11px 40px 11px 40px;
+    color:
+    white;
+}
+.file_upload{
+    padding-left:15px;;
+}
