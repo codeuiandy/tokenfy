@@ -51,7 +51,7 @@ export const Sidebar=()=> {
   <li className="sidebarHeader-list icon-coupons"><Link to="/cupons">Coupons</Link></li>
   <li className="sidebarHeader-list icon-review"><Link to="/reviews">Reviews</Link></li>
   <li className="sidebarHeader-list icon-admin">Admins</li>
-  <li className="sidebarHeader-list icon-qr">QR Coupons</li>
+  <li className="sidebarHeader-list icon-qr"><Link to="/qrcoupons">QR Coupons</Link></li>
   <hr />
   <li className="sidebarHeader-list icon-settings">Settings</li>
   <li className="sidebarHeader-list icon-trash">Trash</li>
