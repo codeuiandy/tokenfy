@@ -9,17 +9,22 @@ export const  Navbar=(props)=> {
   return (
     <React.Fragment>
       {console.log(">>>>>gets here",props.NavRouter)}
-         
+         ``
 
           <div style={{position:"relative"}}>
          <div id="apiDocs">
         <div className="navRoutesLogo">
         <nav className="nav-route-id">
-            <span>Coupons</span>
-            <span>Create Coupon</span>
-            {
-            locat === "/test"?"working":""
-          }
+            <span>
+              {locat === '/reviews'?'Reviews':""}
+              {locat === '/cupons'?'Coupon':""}
+              {locat === '/create_cupons'?'Coupon':""}
+            </span>
+            <span>
+              {locat === '/reviews'?'Reviews':""}
+              {locat === '/cupons'?'Create Coupon':""}
+              {locat === '/create_cupons'?'Create Coupon':""}
+            </span>
           </nav>
          
         </div>
