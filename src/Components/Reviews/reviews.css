@@ -1,5 +1,5 @@
 .review{
-    margin:15px 0;
+    margin:30px 15px 50px 15px;
 }
 .client_review{
     display:flex;
@@ -41,7 +41,7 @@
     border-radius:50%;
 }
 .comment_form {
-    margin-top:20em;
+    margin-top:15em;
     min-width:90%;
     height: 70px;
     border:none;
