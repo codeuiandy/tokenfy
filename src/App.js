@@ -6,6 +6,7 @@ import NotFound from './NotFound'
 import CreateCupons from './Components/Compons/create-cupon'
 import Cupons from './Components/Compons/cupons'
 import Test from './Components/Compons/ex'
+import Reviews from './Components/Reviews/reviews'
 import "./App.css";
 class App extends Component {
 	render() {
@@ -18,6 +19,7 @@ class App extends Component {
           <Route exact="/create_account" path="/create_account" component={CreateAccount}/>
           <Route exact="/create_cupons" path="/create_cupons" component={CreateCupons}/>
 		  <Route exact="/cupons" path="/cupons" component={Cupons}/>
+		  <Route exact="/reviews" path="/reviews" component={Reviews}/>
 		  <Route exact="/test" path="/test" component={Test}/>
 		 
 		  
