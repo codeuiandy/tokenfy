@@ -7,13 +7,13 @@ import ArrowDown from '../Assets/arrowDown.png'
 import calendar from '../Assets/calendar.png'
 import {Link} from 'react-router-dom'
 // import CuponsTable from '../Tables/customTable'
-export default function CreateCupon() {
+export default function CreateCupon(props) {
     const [activePage, setActivePage] = useState("Coupon_Properties")
     const [startDate, setstartDate] = useState(new Date())
     
     return (
         <div>
-            <Layout>
+            <Layout NavRouter={props.location.pathname}>
                 <div className="page-router-display">
                 {/* <CuponsTable/> */}
                     <div className="page-roter-list">

@@ -5,13 +5,13 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import ArrowDown from '../Assets/arrowDown.png'
 import calendar from '../Assets/calendar.png'
-export default function CreateCupon() {
+export default function CreateCupon(props) {
     const [activePage, setActivePage] = useState("Coupon_Properties")
     const [startDate, setstartDate] = useState(new Date())
     
     return (
         <div>
-            <Layout>
+            <Layout NavRouter={props.location.pathname}>
                 <div className="page-router-display">
 
                     <div className="page-roter-list">
