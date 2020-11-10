@@ -210,14 +210,20 @@ export default function CreateCupon(props) {
                     <div class="upload_col">
                         <h4>You can only upload not more than 2 files<br/> <span class="font-weight-light">(JPEG,MP4 of not more than 10MB)</span> </h4>
     
-                        <h4 className="font-weight-bold">UPLOADS</h4>
+                        <h4 className="font-weight-bold m-5">UPLOADS</h4>
                         <div className="file_upload">
-                            <h4>Video 332132_23</h4>
-                            <p>8mb</p>
+                            <span></span>
+                            <div>
+                                <h4 className="font-weight-bold">Video 332132_23</h4>
+                                <p>8mb</p>
+                            </div>
                         </div>
                         <div className="file_upload">
-                            <h4>Image</h4>
-                            <p>8mb</p>
+                            <span></span>
+                            <div>
+                                <h4 className="font-weight-bold">Video 332132_23</h4>
+                                <p>846kb</p>
+                            </div>
                         </div>
                     </div>
                 </div>

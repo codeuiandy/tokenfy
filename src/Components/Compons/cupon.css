@@ -284,6 +284,24 @@ position: relative;
     color:
     white;
 }
+m-5{
+    margin:1em 0;
+}
 .file_upload{
-    padding-left:15px;;
+    display:flex;
+    flex-direction: row;
+    justify-content: baseline;
+    flex-wrap: nowrap;
+    padding-left:30px;
+    margin:10px 0;
+}
+.file_upload>span:before{
+    content:'MP4';
+    height:50px;
+    width:50px;
+    color:#fff;
+    padding:10px;
+    border-radius: 5px;
+    background-color:#2D4EF5;
+    margin:10px;
 }
