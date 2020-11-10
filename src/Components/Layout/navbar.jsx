@@ -21,7 +21,6 @@ export const  Navbar=(props)=> {
               {locat === '/create_cupons'?'Coupon':""}
             </span>
             <span>
-              {locat === '/reviews'?'Reviews':""}
               {locat === '/cupons'?'Create Coupon':""}
               {locat === '/create_cupons'?'Create Coupon':""}
             </span>

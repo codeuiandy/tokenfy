@@ -181,6 +181,7 @@ export default function CreateCupon(props) {
                                     
                         </div>
 
+                
             </div>
 
 
@@ -194,9 +195,8 @@ export default function CreateCupon(props) {
 
                        
 
-
                             
-                </div>
+            </div>
             </Layout>
         </div>
     )

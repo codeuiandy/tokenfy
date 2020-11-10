@@ -20,7 +20,7 @@ export default function CreateCupon(props) {
                         <div>
                             <div className="hsd">
                                 <span
-                                onClick={()=>setActivePage("Coupon_Properties")}
+                                onClick={(e)=>setActivePage("Coupon_Properties")}
                                  className={`page-router-name 
                                 ${activePage==="Coupon_Properties"?"page-router-name-active":""}`}>
                                     Coupon Properties</span>
@@ -40,7 +40,6 @@ export default function CreateCupon(props) {
                     <div className="pg-dimacation"></div>
 
                 </div>
-
                            
 
             </Layout>

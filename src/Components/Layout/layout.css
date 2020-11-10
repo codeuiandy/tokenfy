@@ -172,24 +172,26 @@ cursor: pointer;
   padding: 0;
   margin-left: 15px;
   margin-top: 10px;
-  margin-top: 30px;
+  margin-top: 10em;
   margin-left: 0;
 }
+
 
 .ApisideDropdown .sidebarHeader-list{
   font-family: Gotham;
   cursor: pointer;
-font-size: 13px;
-font-style: normal;
-font-weight: 600;
-line-height: 13px;
-letter-spacing: 0em;
-text-align: left;
-color: white;
-padding: 10px;
-border-left: none;
-    border-right: none;
-    padding-left: 22px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  padding: 10px;
+  border-left: none;
+  border-right: none;
+  padding-left: 30px;
+  margin:15px 0;
 }
 
 .subSidbar-Details{
@@ -323,4 +325,15 @@ margin-left: 13px;
 }
 
 
+}
+hr{
+  border-top:1px solid #fff;
+}
+
+/* Sidebar Icons */
+.icon-dropdown{
+  background-image: url('../Assets/arrowDown.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-left: 0px; /* Adjust according to image size to push text across. */
 }
