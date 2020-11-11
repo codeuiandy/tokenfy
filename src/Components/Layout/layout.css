@@ -115,7 +115,7 @@ text-align: left;
   top: 31px;
   background: transparent;
   color: #C4C4C4;
-cursor: pointer;
+  cursor: pointer;
 }
 
 #apiDocs .navRoutesLogo{
@@ -131,7 +131,8 @@ cursor: pointer;
   right: 0;
   overflow: hidden;
   overflow-y: scroll;
-  background-color:#fff3f3;
+  background-color:#fdfcfc;
+  padding-right: 50px;
 }
 
 #apiDocsWrap .generalPadding{

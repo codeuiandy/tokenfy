@@ -14,8 +14,8 @@ export const  Navbar=(props)=> {
          <div id="apiDocs">
         <div className="navRoutesLogo">
         <nav className="nav-route-id">
-            <span>Coupons</span>
-            <span>Create Coupon</span>
+            <span>{props.page}</span>
+            <span>{props.subPage}</span>
           </nav>
         </div>
 

@@ -51,7 +51,7 @@ export const Sidebar=()=> {
                     <span className="sidebar-icon-container"><img className="sidebar-icon" src={ArrowDownPNG} /></span>
                   </div>
                   <div className="collapse menu-item" id="dashboard-menu">
-                    <li><Link to="#">Overview</Link></li>
+                    <li><Link to="/dashboard-overview">Overview</Link></li>
                     <li><Link to="#">Users</Link></li>
                     <li><Link to="#">Merchants</Link></li>
                   </div>
@@ -70,10 +70,10 @@ export const Sidebar=()=> {
                 </li>
 
                 <li className="sidebar-menu">
-                  <Link to="#"><span className="sidebar-icon-container fa fa-cog"></span> Settings</Link>
+                  <Link to="/account-settings"><span className="sidebar-icon-container fa fa-cog"></span> Settings</Link>
                 </li>
                 <li className="sidebar-menu">
-                  <Link to="#"><span className="sidebar-icon-container fa fa-trash"></span>Trash</Link>
+                  <Link to="/trash-list"><span className="sidebar-icon-container fa fa-trash"></span>Trash</Link>
                 </li>
                 <li className="sidebar-menu">
                   <Link to="#"><span className="sidebar-icon-container fa fa-sign-out"></span>Logout</Link>
