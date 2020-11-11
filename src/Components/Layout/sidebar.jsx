@@ -1,8 +1,8 @@
 import React,{useState, useEffect} from 'react'
 import { Scrollbars } from 'react-custom-scrollbars';
-import {useRecoilState} from 'recoil'
-import {toggleSidebar} from '../../globalState/localData'
-import {Link} from 'react-router-dom';
+import {useRecoilState} from 'recoil';
+import {toggleSidebar} from '../../globalState/localData';
+import { Link } from 'react-router-dom';
 import DashboardPNG from '../Assets/icons/dashboard.png';
 import ArrowDownPNG from '../Assets/arrowDown.png';
 import AdminsPNG from '../Assets/icons/admins.png';
@@ -37,6 +37,7 @@ export const Sidebar=()=> {
       <div id="apiDocsSidebar">
      
         <div className={`apiDocsIde ${sidebarState.openSidebar === true ?" apiDocsOpenSidebar" : sidebarState.defaultSidebarApiState}`}>
+
           <Scrollbars style={{ width:"100%", height: "100%"}}>
               <ul className="ApisideDropdown">
                 <li className="sidebar-logo">Tokenfy</li>
