@@ -1,0 +1,110 @@
+.review{
+    margin:30px 15px 50px 15px;
+}
+.client_review{
+    display:flex;
+    justify-content:flex-start;
+    flex-direction: row;
+    flex-wrap:nowrap;
+}
+.client_review .comment{
+    background-color: #fff;
+    border-radius:15px;
+    margin:0 15px;
+    padding:10px 20px;
+    font-size:16px;
+    background: #FFFFFF;
+box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.08);
+border-radius: 15px;
+}
+
+.user_comment{
+    display:flex;
+    justify-content:flex-start;
+    flex-direction: row-reverse;
+    flex-wrap:nowrap;
+}
+
+.user_comment .comment{
+    margin:0 15px;
+    padding:10px 20px;
+    font-size:16px;
+    background: #0C2556;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+    color: white;
+}
+.userAvatar{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+
+.comhd{
+    position: relative;
+}
+.comment_form {
+    margin-top:15em;
+    min-width:90%;
+    height: 70px;
+    border:none;
+    border-radius:15px;
+    padding-right:-10%;
+    background: #FFFFFF;
+box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.08);
+border-radius: 15px;
+            position: absolute;
+            bottom: 10px;
+            display: flex;
+}
+.comment_form:focus{
+    outline: none;
+}
+.comment_form_button {
+    background:
+    #009e61;
+    border-radius: 8px;
+    padding: 11px 40px 11px 40px;
+    color:
+    white;
+    margin-left:-12%;
+    position: absolute;
+    right: 20px;
+}
+
+.header-comments-sec{
+    margin-top: 0;
+}
+
+.header-comments-sec h2{
+    margin-top: 13px;
+    font-weight: 500;
+font-size: 30px;
+line-height: 41px;
+/* identical to box height */
+
+
+color: #1E253A;
+}
+
+.input-comment-text{
+    display: flex;
+    position: relative;
+    background: #FFFFFF;
+box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.08);
+border-radius: 15px;
+    height: 90px;
+    justify-self: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px 50px  20px 20px;
+    width: 95%;
+}
+
+.input-comment-text input{
+    border: 1px solid rgba(45, 78, 245, 0.08);
+box-sizing: border-box;
+border-radius: 5px;
+height: 95%;
+width: 90%;
+}

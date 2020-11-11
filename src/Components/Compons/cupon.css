@@ -13,7 +13,15 @@
 
 .page-roter-list div{
     display: flex;
-    margin-right: 20px;
+    margin-right: 12px;
+}
+
+
+.create_cupon-btn {
+    right: 106px;
+    position: absolute;
+    /* width: 82%; */
+    top: 19px;
 }
 
 .create_cupon-btn button{
@@ -21,6 +29,7 @@
     border-radius: 8px;
     padding: 11px 30px 11px 30px;
     color: white;
+    
 }
 
 .page-router-name
@@ -250,6 +259,428 @@ position: relative;
                         }
 
                     }
+.dragDropArea{
+    display:flex;
+    height:500px;
+    width:500px;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+.upload_form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* justify-content: center; */
+    margin-top: 38px;
+    
+}
 
-                    
-            
+.viewUploadsv{
+    margin-left: 40px !important;
+}
+
+.fileUploadinfo{
+    margin-bottom: 20px;
+}
+
+.viewUploads{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.viewUploads .fileType{
+    background: #2D4EF5;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewUploads .fileName div:first-child{
+    font-size: 16px;
+line-height: 21px;
+
+color: #1E253A;
+}
+
+.viewUploads .fileName div:last-child{
+    font-size: 16px;
+line-height: 21px;
+
+color: rgba(128, 128, 128, 0.568);
+}
+
+.upload_form .fileUploadinfo h1{
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: black;
+}
+
+.upload_form .fileUploadinfo h2{
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(128, 128, 128, 0.685);
+}
+
+
+.upload_col{
+    margin:0 15px;
+}
+.upload_col h4{
+    font-size:15px;
+}
+.font-weight-bold{
+    font-weight: bold;
+}
+.font-weight-light{
+    font-weight:300;
+}
+.publish_button{
+    background:
+    #009e61;
+    border-radius: 8px;
+    padding: 11px 40px 11px 40px;
+    color:
+    white;
+}
+m-5{
+    margin:1em 0;
+}
+.file_upload{
+    display:flex;
+    flex-direction: row;
+    justify-content: baseline;
+    flex-wrap: nowrap;
+    padding-left:30px;
+    margin:10px 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.file_upload>span:before{
+    content:'MP4';
+    height:50px;
+    width:50px;
+    color:#fff;
+    padding:10px;
+    border-radius: 5px;
+    background-color:#2D4EF5;
+    margin:10px;
+}
+
+.uploads-section h1{
+    font-weight: 600;
+font-size: 25px;
+line-height: 24px;
+margin-bottom: 25px;
+margin-top: 25px;
+color: #1E253A;
+
+}
+
+
+.uploadCuponImage{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 40%;
+    /* border: 1px solid red; */
+}
+
+.uploadCuponImage input{
+position: absolute;
+width: 100%;
+height: 100%;
+opacity: 0;
+cursor: pointer;
+}
+
+.uploadCuponImage span{
+    font-size: 16px;
+line-height: 21px;
+margin-bottom: 10px;
+color: #1E253A;
+}
+
+.uploadCuponImage .upload97{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+font-size: 16px;
+line-height: 16px;
+margin-bottom: 10px;
+color: #838690;
+}
+
+.uploadCuponImage .upload97::before{
+ content: "";
+ width:40px;
+ height: 1px;
+ background-color: #838690;
+ display: block;
+ margin-right: 5px;
+}
+
+.uploadCuponImage .upload97::after{
+    content: "";
+    width:40px;
+    height: 1px;
+    background-color: #838690;
+    display: block;
+    margin-left: 5px;
+   }
+
+   .uploadCupon-file{
+    background: #2D4EF5;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+   }
+
+
+   @media(max-width:1004px){
+    .upload_form{
+        flex-wrap: wrap;
+    }
+
+    .viewUploadsv{
+        margin-top: 30px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .submit-cupon-button {
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 40px;
+        margin-top: 43px;
+    }
+
+    .dragDropArea {
+        display: flex;
+        height: 256px;
+margin: 0 !important;
+        width: 90%;
+       
+    }
+
+
+   }
+
+   .viewCupon-actions{
+       display: flex;
+       justify-content: space-between;
+       width: 95%;
+   }
+
+   .viewCupon-actions .edit-btn-cupon button{
+   padding: 10px 50px 10px 50px;
+   border-radius: 3px;
+   background: #2D4EF5;
+border-radius: 8px;
+color: white;
+}
+
+.viewCupon-actions .Deactivate-btn-cupon button{
+    padding: 10px 50px 10px 50px;
+    border-radius: 3px;
+ border-radius: 8px;
+ color: white;
+ /* margin-right: 10px; */
+ }
+
+ .viewCupon-actions .Deactivate-btn-cupon button:first-child{
+    background: rgba(255, 146, 1, 0.17);
+ margin-right: 20px;
+ }
+
+ .viewCupon-actions .Deactivate-btn-cupon button:last-child{
+    background: transparent;
+    border: 1px solid #F28F8F;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #F28F8F;
+ }
+
+ .cupon_statics{
+     display: flex;
+     justify-content: space-between;
+     width: 95%;
+     flex-wrap: wrap;
+     margin-top: 26px;
+     background: rgba(45, 78, 245, 0.08);
+border-radius: 15px;
+padding: 20px;
+ }
+
+ .cupon_statics .cuponImg{
+display: flex;
+
+
+ }
+
+ .cupon_statics .cuponImg img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+     }
+
+    .about-viewCupon  {
+        margin-top: 10px;
+        margin-left: 7px;
+        margin-bottom: 0;
+     }
+
+     .about-viewCupon  p{
+        margin-left: 7px;
+        margin-bottom: 0;
+        font-size: 30px;
+color: #1E253A;
+     }
+
+     .about-viewCupon  button{
+        
+background: rgba(28, 158, 97, 0.17);
+border-radius: 8px;
+color: #1C9E61;
+margin-left: 7px;
+     }
+
+     .cupon-detailsbe7 p:first-child{
+         margin: 0;
+         margin-top: 15px;
+         margin-bottom: 10px;
+     }
+
+     .cupon-detailsbe7 p span{
+        font-size: 16px;
+        color: #838690;
+    }
+
+    .cupon-detailsbe7 p {
+        font-size: 15px;
+        color: black;
+    }
+
+
+    .des-section76g{
+        width: 95%;
+        margin-top: 20px;
+
+    }
+
+    .des-section76g h1{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        
+        color: #000000;
+        
+    }
+
+    .des-section76g p{
+        width: 95%;
+        font-size: 18px;
+line-height: 24px;
+margin-top: 12px;
+color: #838690;
+    }
+
+    .restriction-cupons p{
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+    }   
+.restriction-cupons p::before{
+content: "";
+display: block;
+width: 22px;
+height: 1px;
+background-color: black;
+margin-right: 5px;
+}
+
+.rest76 h1{
+    font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+margin-top: 28px;
+color: #000000;
+}
+
+.cupon-claimers{
+    margin-top: 20px;
+}
+
+.cupon-claimers span:first-child{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 41px;
+    /* identical to box height */
+    
+    
+    color: #1E253A;
+}
+
+
+.cupon-claimers button{
+    color: white;
+background: #FFA866;
+border-radius: 8px;
+margin: 0 10px 0 10px;
+}
+
+.cupon-claimers span:last-child{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    
+    color: #838690;
+    
+}
+
+.Table-sec{
+    width: 95%;
+    height: 500px;
+    background-color: white;
+    border-radius: 6px;
+    margin-top: 26px;
+    margin-bottom: 20px;
+}
+
+.add-name-c-r::after{
+    top: 39px;
+}
+
+.c-count-copon{
+    width: 40px;
+    height: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.137);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 6px;
+    color: #000000;
+    padding-left: 10px;
+    padding-top: 6px;
+}
