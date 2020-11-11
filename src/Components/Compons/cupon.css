@@ -1,5 +1,5 @@
 .pg-dimacation{
-    width: 90%;
+    width: 96%;
     height: 1px;
     background-color: rgba(131, 134, 144, 0.17);
     margin-top: 20px;
@@ -657,13 +657,14 @@ margin: 0 10px 0 10px;
     
 }
 
-.Table-sec{
+.Table-sec {
     width: 95%;
-    height: 500px;
+    min-height: 500px;
     background-color: white;
-    border-radius: 6px;
+    border-radius: 10px;
     margin-top: 26px;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 .add-name-c-r::after{

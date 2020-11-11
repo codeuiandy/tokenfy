@@ -5,24 +5,25 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import {Link} from 'react-router-dom';
 import User from '../Assets/user.png'
+import EditPNG from '../Assets/icons/white_edit.png';
 export default function ViewCupon(props) {
     const[activePage,setActivePage] = useState("Review_Category_All");
     const[startDate,setStartDate] = useState(new Date());
     return (
         <div>
-            <Layout  NavRouter={props.location.pathname}>
+            <Layout  pageName="Rx Pharmacy 30% Cashback">
 
                 <div className="viewCupon-actions">
                     <div className="edit-btn-cupon">
-                        <Link to="/edit_cupon">
-                        <button>Edit</button>
+                        <Link to="/edit_coupon">
+                        <button>Edit  <div class="icon-image-container"><img src={EditPNG}/></div></button>
                         </Link>
                         
                     </div>
 
                     <div className="Deactivate-btn-cupon">
-                        <button>Deactivate</button>
-                        <button>Delete</button>
+                        <button>Deactivate <span className="fa fa-times-circle-o"></span></button>
+                        <button>Delete <span className="fa fa-trash"></span></button>
                     </div>
 
                 </div>
@@ -72,11 +73,49 @@ export default function ViewCupon(props) {
 
                   <div className="cupon-claimers">
                       <span>Claimers</span>
-                      <button>55/178</button>
+                      <button className="pl-2 pr-2 pt-1 pb-1">55/178</button>
                       <span>coupons remaining(updated 15minutes ago)</span>
                   </div>
 
-                  <div className="Table-sec"></div>
+                  <div className="Table-sec">
+                  <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                    <thead className="mb-20">
+                        <tr>
+                            <th className="th-sm">TAKE BY
+                            </th>
+                            <th className="th-sm">TAKE DATE
+                            </th>
+                            <th className="th-sm">
+                                EXPIRING
+                            </th>
+                            <th className="th-sm">
+                                STATUS
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            [...'123456'].map(()=>(
+                                <tr>
+                                    <td>
+                                        <p>RX Pharmacy</p>
+                                    </td>
+                                    <td>
+                                        <p>Adekunle Akintade</p>
+                                    </td>
+                                    <td>
+                                        20/10/2020
+                                    </td>
+                                    <td>
+                                        <button className="restore-action-button mr-3">Active</button> 
+                                    </td>
+                                </tr>
+                            ))
+                        }
+                    </tbody>
+                    </table>
+
+                  </div>
                
             
             </Layout>

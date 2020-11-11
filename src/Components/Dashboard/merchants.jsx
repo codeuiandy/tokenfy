@@ -2,16 +2,15 @@ import React,{useState} from 'react'
 import {Layout} from '../Layout/layout'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import ArrowDown from '../Assets/arrowDown.png'
-import calendar from '../Assets/calendar.png'
-import Remove from '../Assets/close.png'
-export default function CreateCupon(props) {
+
+
+export default function CreateMerchant(props) {
     const [activePage, setActivePage] = useState("Coupon_Properties")
     const [startDate, setstartDate] = useState(new Date())
     
     return (
         <div>
-            <Layout NavRouter={props.location.pathname}>
+            <Layout pageName="Add Merchant">
              
                         <div className="create-cupon-page">
 

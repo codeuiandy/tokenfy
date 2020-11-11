@@ -12,7 +12,7 @@ export default function CreateCupon(props) {
     
     return (
         <div>
-            <Layout NavRouter={props.location.pathname}>
+            <Layout pageName="Coupons" subPageName="Create Coupons">
                 <div className="page-router-display">
 
                     <div className="page-roter-list">

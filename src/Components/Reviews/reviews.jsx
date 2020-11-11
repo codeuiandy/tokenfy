@@ -12,7 +12,7 @@ export default function Reviews(props) {
     const[startDate,setStartDate] = useState(new Date());
     return (
         <div>
-            <Layout  NavRouter={props.location.pathname}>
+            <Layout pageName="Reviews">
             
                 <CommentList />
                 <CommentForm />

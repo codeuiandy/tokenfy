@@ -37,8 +37,8 @@ const DashboardOverview = () => {
                         <div className="col-md-6">
                             <div className="card">
                                 <h5 className="bold-550 d-inline">Top Merchants</h5>
-                                <Link className=" text-primary pull-right"> 
-                                    <span to="#" className="mr-1 d-inline">View</span> 
+                                <Link to="/dashboard/users" className=" text-primary pull-right"> 
+                                    <span className="mr-1 d-inline">View</span> 
                                     <i className="fa fa-angle-right"></i>
                                     <i className="fa fa-angle-right"></i>
                                     <i className="fa fa-angle-right"></i>

@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import DashboardPNG from '../Assets/icons/dashboard.png';
 import ArrowDownPNG from '../Assets/arrowDown.png';
 import AdminsPNG from '../Assets/icons/admins.png';
+import CouponsPNG from '../Assets/icons/coupons.png';
+import ReviewPNG from '../Assets/icons/review.png';
 export const Sidebar=()=> {
   let [sidebarState, setSidebarState] = useRecoilState(toggleSidebar)
   let [toggleDropDowns, setDropdows] = useState({
@@ -53,9 +55,21 @@ export const Sidebar=()=> {
                   </div>
                   <div className="collapse menu-item" id="dashboard-menu">
                     <li><Link to="/dashboard-overview">Overview</Link></li>
-                    <li><Link to="#">Users</Link></li>
-                    <li><Link to="#">Merchants</Link></li>
+                    <li><Link to="/dashboard/users/">Users</Link></li>
+                    <li><Link to="/merchants/users_overview">Merchants</Link></li>
                   </div>
+                </li>
+                <li className="sidebar-menu">
+                  <Link to="/coupons">
+                    <span className="sidebar-icon-container"><img className="sidebar-icon" src={CouponsPNG} /></span>
+                    <span className="sidebar-menu-title">Coupons</span>
+                  </Link>
+                </li>
+                <li className="sidebar-menu">
+                  <Link to="/reviews">
+                    <span className="sidebar-icon-container"><img className="sidebar-icon" src={ReviewPNG} /></span>
+                    <span className="sidebar-menu-title">Reviews</span>
+                  </Link>
                 </li>
                 <li className="sidebar-menu">
                   <div data-toggle="collapse" href="#admin-menu">

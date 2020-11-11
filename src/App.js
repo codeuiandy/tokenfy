@@ -27,17 +27,17 @@ class App extends Component {
 				{/* <NotificationContainer /> */}
 				<Switch>
 					<Route exact="/" path="/" component={Login}/>
-          <Route exact="/login" path="/login" component={Login}/>
-          <Route exact="/create_account" path="/create_account" component={CreateAccount}/>
-          <Route exact="/create_cupons" path="/create_cupons" component={CreateCupons}/>
-		  <Route exact="/cupons" path="/cupons" component={Cupons}/>
-		  <Route exact="/reviews" path="/reviews" component={Reviews}/>
-		  <Route exact="/view_cupon" path="/view_cupon" component={ViewCupon}/>
-		  <Route exact="/edit_cupon" path="/edit_cupon" component={EditCupon}/>
-		  <Route exact="/dashboard/users" path="/dashboard/users" component={DashbordUsers}/>
-		  <Route exact="/dashboard/merchants" path="/dashboard/merchants" component={Dashbordmerchants}/>
-		  <Route exact="/merchants_overview" path="/merchants_overview" component={MerchantOverview}/>
-		  <Route exact="/users_overview" path="/users_overview" component={UsersOverview}/>
+					<Route exact="/login" path="/login" component={Login}/>
+					<Route exact="/create_account" path="/create_account" component={CreateAccount}/>
+					<Route exact="/create_coupons" path="/create_coupons" component={CreateCupons}/>
+					<Route exact="/coupons" path="/coupons" component={Cupons}/>
+					<Route exact="/reviews" path="/reviews" component={Reviews}/>
+					<Route exact="/view_coupon" path="/view_coupon" component={ViewCupon}/>
+					<Route exact="/edit_coupon" path="/edit_coupon" component={EditCupon}/>
+					<Route exact="/dashboard/users" path="/dashboard/users" component={DashbordUsers}/>
+					<Route exact="/dashboard/add_merchants" path="/dashboard/add_merchants" component={Dashbordmerchants}/>
+					<Route exact="/merchants_overview" path="/merchants_overview" component={MerchantOverview}/>
+					<Route exact="/merchants/users_overview" path="/merchants/users_overview" component={UsersOverview}/>
 					<Route exact="/admin-tasks" path="/admin-tasks" component={AdminTasks} />
 					<Route exact="/admin-task" path="/create-task" component={CreateTask} />
 					<Route exact="/admin-list" path="/admin-list" component={AdminList} />

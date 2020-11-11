@@ -78,11 +78,11 @@ color: #FFA866;
     position: relative;
 }
 
-.searchFiltert div img{
-position: absolute;
-right: 16px;
-top: 12px;
-
+.searchFiltert div img {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    width: auto;
 }
 
 .searchFiltert div input{
