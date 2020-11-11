@@ -9,7 +9,7 @@ export const Layout=(props)=> {
   let [sidebarState, setSidebarState] = useRecoilState(toggleSidebar)
   return (
     <div>
-     <Navbar navbarContentSwitcher={props.navbarContentSwitcher} page={props.pageName}/>
+     <Navbar navbarContentSwitcher={props.navbarContentSwitcher} page={props.pageName} NavRouter={props.NavRouter}/>
      <Sidebar/>
      <div id="apiDocsWrap">
        <div onClick={()=>setSidebarState({...sidebarState, openSidebar:false})} className="generalPadding">
