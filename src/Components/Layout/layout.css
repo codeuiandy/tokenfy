@@ -131,7 +131,7 @@ cursor: pointer;
   right: 0;
   overflow: hidden;
   overflow-y: scroll;
-
+  background-color:#fff3f3;
 }
 
 #apiDocsWrap .generalPadding{

@@ -12,6 +12,9 @@ import DashbordUsers from './Components/Dashboard/Users'
 import Dashbordmerchants from './Components/Dashboard/merchants'
 import MerchantOverview from './Components/Dashboard/merchantOverview'
 import UsersOverview from './Components/Dashboard/usersOverview'
+import AdminTasks from './Pages/Admins/admin-tasks';
+import CreateTask from './Pages/Admins/create-task';
+import AdminList from './Pages/Admins/admin-list';
 import "./App.css";
 class App extends Component {
 	render() {
@@ -31,10 +34,9 @@ class App extends Component {
 		  <Route exact="/dashboard/merchants" path="/dashboard/merchants" component={Dashbordmerchants}/>
 		  <Route exact="/merchants_overview" path="/merchants_overview" component={MerchantOverview}/>
 		  <Route exact="/users_overview" path="/users_overview" component={UsersOverview}/>
-
-		  
-		 
-		  
+					<Route exact="/admin-tasks" path="/admin-tasks" component={AdminTasks} />
+					<Route exact="/admin-task" path="/create-task" component={CreateTask} />
+					<Route exact="/admin-list" path="/admin-list" component={AdminList} />
 					<Route path="*" component={NotFound} />
 				</Switch>
 			</Router>

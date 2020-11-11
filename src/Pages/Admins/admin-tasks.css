@@ -1,0 +1,36 @@
+.admin-task-content {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid #f3f0f0;
+    border-bottom: 1px solid #f3f0f0;
+}
+.pt-15{
+    padding-top:15px;
+}
+.mt-20{
+    margin-top:20px;
+}
+.avatar-container {
+    border-radius: 50%;
+    background-color: #e2c4c4;
+    width: 50px;
+    height: 50px;
+}
+.react-datepicker__input-container input,input.react-datepicker-ignore-onclickoutside {
+    border: 1px solid #eadbdb;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 2;
+    width: 100%;
+}
+.mt-5rem {
+    margin-top: 5rem;
+}
+.upload-file-container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 15px;
+}
