@@ -42,8 +42,8 @@ export const Sidebar=()=> {
     <Link to="/dashboard">Dashboard</Link></li>
   { 
     toggleDropDowns.option1===true?(<ul className="subSidbar-Details">
-     <li className="subSidbar-Details-child">Users</li>
-     <li className="subSidbar-Details-child">Merchants</li>
+     <li className="subSidbar-Details-child"><Link to="/user">Users</Link></li>
+     <li className="subSidbar-Details-child"><Link to="/merchants">Merchants</Link></li>
     </ul>):""
   } 
 
