@@ -20,6 +20,11 @@ import AccountSettings from './Pages/Settings/settings';
 import DashboardOverview from './Pages/Dashboard/overview';
 import "./App.css";
 import TrashList from "./Pages/Trash/trash";
+import Wallet from './Components/Dashboard/wallet';
+import UserDetails from "./Components/Dashboard/user_details";
+import AddReward from "./Components/Dashboard/add-reward";
+import CouponType from "./Components/Dashboard/coupon_type";
+import CreateCategory from "./Components/Dashboard/create_category";
 class App extends Component {
 	render() {
 		return (
@@ -45,6 +50,11 @@ class App extends Component {
 					<Route exact="/account-settings" path="/account-settings" component={AccountSettings} />
 					<Route exact="/trash-list" path="/trash-list" component={TrashList} />
 					<Route exact="/dashbord-overview" path="/dashboard-overview" component={DashboardOverview} />
+					<Route exact="/wallet" path="/wallet" component={Wallet} />
+					<Route exact="/user-details" path="/user-details" component={UserDetails} />
+					<Route exact="/add-reward" path="/add-reward" component={AddReward} />
+					<Route exact="/create-coupon-type" path="/create-coupon-type" component={CouponType} />
+					<Route exact="/create-category" path="/create-category" component={CreateCategory} />
 					<Route path="*" component={NotFound} />
 				</Switch>
 			</Router>
