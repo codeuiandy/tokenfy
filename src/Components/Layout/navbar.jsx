@@ -19,11 +19,15 @@ export const  Navbar=(props)=> {
               {locat === '/create_cupons'?'Coupon':""}
               {locat === '/qrcoupons'?'QR Coupons':""}
               {locat === '/admin'?'Admins':""}
+              {locat === '/user'?'Overview':""}
+              {locat === '/merchants'?'Overview':""}
             </span>
             <span>
               {locat === '/cupons'?'Create Coupon':""}
               {locat === '/create_cupons'?'Create Coupon':""}
               {locat === '/qrcoupons'?'Create Coupons':""}
+              {locat === '/user'?'Users':""}
+              {locat === '/merchants'?'Merchants':""}
             </span>
           </nav>
          
