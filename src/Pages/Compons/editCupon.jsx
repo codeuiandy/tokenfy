@@ -1,18 +1,17 @@
 import React,{useState} from 'react'
-import {Layout} from '../Layout/layout'
+import {Layout} from '../../Components/Layout/layout'
 import './cupon.css'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import ArrowDown from '../Assets/arrowDown.png'
-import calendar from '../Assets/calendar.png'
-import Remove from '../Assets/close.png'
+import calendar from '../../Components/Assets/calendar.png'
+import Remove from '../../Components/Assets/close.png'
 export default function CreateCupon(props) {
     const [activePage, setActivePage] = useState("Coupon_Properties")
     const [startDate, setstartDate] = useState(new Date())
     
     return (
         <div>
-            <Layout pageName="Coupons" subPageName="Create Coupons">
+            <Layout pageName="Edit Coupon">
                 <div className="page-router-display">
 
                     <div className="page-roter-list">

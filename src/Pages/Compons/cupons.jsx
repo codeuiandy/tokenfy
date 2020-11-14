@@ -1,13 +1,10 @@
 import React,{useState} from 'react'
-import {Layout} from '../Layout/layout'
-import './index.css'
+import {Layout} from '../../Components/Layout/layout'
+import './cupon.css'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import ArrowDown from '../Assets/arrowDown.png'
-import calendar from '../Assets/calendar.png'
 import {Link} from 'react-router-dom'
-import SearchImg from '../Assets/search.png'
-import download from '../Assets/download.png'
+import SearchImg from '../../Components/Assets/search.png'
 // import CuponsTable from '../Tables/customTable'
 export default function CreateCupon(props) {
     const [activePage, setActivePage] = useState("Coupon_Properties")
@@ -15,14 +12,10 @@ export default function CreateCupon(props) {
     
     return (
         <div>
-            <Layout pageName="QR Coupons">
-                <div className="qr-coupon-btn-head">
-                    <button>QR Coupons</button>
-                    <button>Submitted Coupons</button>
-                </div>
+            <Layout pageName="Coupons">
                 <div className="page-router-display">
-                <div style={{top:"85px"}} className="create_cupon-btn"> <Link to="/create_qr_coupon">
-                    <button><span className="fa fa-plus"></span> Create QR Coupon</button></Link> </div>
+                {/* <CuponsTable/> */}
+                <div className="create_cupon-btn"> <Link to="/create_coupons"><button><span className="fa fa-plus"></span> Create Coupons</button></Link> </div>
                     <div  style={{marginBottom:"20px"}} className="page-roter-list">
                         
                         <div>
@@ -41,6 +34,14 @@ export default function CreateCupon(props) {
                                  className={`page-router-name 
                                 ${activePage==="cash-back"?"page-router-name-active ":""}`}>
                                    Cash back</span> <div className="c-count-copon">200</div>
+                            </div>
+
+                            <div className="hsd">
+                                <span
+                                onClick={(e)=>{setActivePage("onle-deal")}}
+                                 className={`page-router-name 
+                                ${activePage==="onle-deal"?"page-router-name-active ":""}`}>
+                                  Online deals</span><div className="c-count-copon">200</div>
                             </div>
 
                             <div className="hsd">

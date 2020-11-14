@@ -1,15 +1,15 @@
 import React,{useState} from 'react'
-import {Layout} from '../Layout/layout'
+import {Layout} from '../../Components/Layout/layout';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import {Link} from 'react-router-dom';
-import User from '../Assets/user.png'
-import EditPNG from '../Assets/icons/white_edit.png';
+import User from '../../Components/Assets/user.png'
+import EditPNG from '../../Components/Assets/icons/white_edit.png';
 
-export default function MerchantOverview(props) {
+export default function UserDetails(props) {
     return (
         <div>
-            <Layout pageName="Overview" subPageName="Merchants">
+            <Layout pageName="Overview" subPageName="User">
 
             <div className="viewCupon-actions">
                     <div className="edit-btn-cupon">
@@ -31,7 +31,7 @@ export default function MerchantOverview(props) {
                         
                         <img src={User}/>
                         <div className="about-viewCupon">
-                        <p>Rx Pharmacy</p>
+                        <p>Adeyemi Adesanya</p>
                         <button>Active</button>
                     </div>
                     </div>
@@ -51,25 +51,43 @@ export default function MerchantOverview(props) {
                    
                 </div>
 
-                <div className="des-section76g">
-                    <h1>Description</h1>
-                    <p>An online coupon that deals in various goods ranging from electronics to any o
-                        ther suitable text for this section. Any other suitable text for this section.</p>
+                <section className="page-section">
+                    <div className="row">
+                        <div className="col-md-6 p-0">
+                            <div className="card bg-dark">
+                                <h3 className="text-white">Wallet Balance</h3>
+                                <h1 className="bold-550 text-white mt-5 mb-5 text-center"><span className="bold-550">N</span>20,000</h1>
+                            </div>
+                            <Link to="/wallet" className="btn btn-warning btn-block mt-3">View Wallet</Link>
+                        </div>
+                        <div className="col-md-5">
+                            <div className="card mt-3">
+                                <h5 className="text-muted bold-550">Top Claimed Categories</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <div className="cupon-claimers-overview mt-3">
+                    <span>Coupons</span>
                 </div>
-                 
-
-                  <div className="cupon-claimers-overview">
-                      <span>Coupons</span>
-                      
-                  </div>
-
                 <div className="Table-sec">
                   <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
                     <thead className="mb-20">
                         <tr>
-                            <th className="th-sm">TAKE BY
+                            <th className="th-sm">MERCHANT
                             </th>
-                            <th className="th-sm">TAKE DATE
+                            <th className="th-sm">TYPE
+                            </th>
+                            <th className="th-sm">
+                                CATEGORY
+                            </th>
+                            <th className="th-sm">
+                                OFFER
+                            </th>
+                            <th className="th-sm">
+                                TAKE DATE
                             </th>
                             <th className="th-sm">
                                 EXPIRING
@@ -84,13 +102,22 @@ export default function MerchantOverview(props) {
                             [...'123456'].map(()=>(
                                 <tr>
                                     <td>
-                                        <p>RX Pharmacy</p>
+                                        <p>Jumia</p>
                                     </td>
                                     <td>
-                                        <p>Adekunle Akintade</p>
+                                        <p>Cashback</p>
                                     </td>
                                     <td>
-                                        20/10/2020
+                                        Travels
+                                    </td>
+                                    <td>
+                                        30%
+                                    </td>
+                                    <td>
+                                        10/11/2020
+                                    </td>
+                                    <td>
+                                        10/11/2022
                                     </td>
                                     <td>
                                         <button className="restore-action-button mr-3">Active</button> 

@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import {Layout} from '../Layout/layout'
+import {Layout} from '../../Components/Layout/layout';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 

@@ -1,34 +1,34 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Login from './Components/Login/Login'
-import CreateAccount from './Components/Login/CreateAccount'
+import Login from './Pages/Login/Login'
+import CreateAccount from './Pages/Login/CreateAccount'
 import NotFound from './NotFound'
-import CreateCupons from './Components/Compons/create-cupon'
-import Cupons from './Components/Compons/cupons'
-import Reviews from './Components/Reviews/reviews'
-import ViewCupon from './Components/Compons/viewCupon'
-import EditCupon from './Components/Compons/editCupon'
-import DashbordUsers from './Components/Dashboard/Users'
-import Dashbordmerchants from './Components/Dashboard/merchants'
-import MerchantOverview from './Components/Dashboard/merchantOverview'
-import UsersOverview from './Components/Dashboard/usersOverview'
+import CreateCupons from './Pages/Compons/create-cupon'
+import Cupons from './Pages/Compons/cupons'
+import Reviews from './Pages/Reviews/reviews'
+import ViewCupon from './Pages/Compons/viewCupon'
+import EditCupon from './Pages/Compons/editCupon'
+import DashbordUsers from './Pages/Dashboard/Users'
+import Dashbordmerchants from './Pages/Dashboard/merchants'
+import MerchantOverview from './Pages/Dashboard/merchantOverview'
+import UsersOverview from './Pages/Dashboard/usersOverview'
 import AdminTasks from './Pages/Admins/admin-tasks';
 import CreateTask from './Pages/Admins/create-task';
 import AdminList from './Pages/Admins/admin-list';
 import CreateAdmin from './Pages/Admins/create-admin';
 import AccountSettings from './Pages/Settings/settings';
 import DashboardOverview from './Pages/Dashboard/overview';
-import QrCoupons from './Components/QRCoupon/QrCoupons';
-import CreateQrCoupons from './Components/QRCoupon/createQrCoupon';
-import CreateQrCouponsTwo from './Components/QRCoupon/createCoupon_two';
+import QrCoupons from './Pages/QRCoupon/QrCoupons';
+import CreateQrCoupons from './Pages/QRCoupon/createQrCoupon';
+import CreateQrCouponsTwo from './Pages/QRCoupon/createCoupon_two';
 import "./App.css";
 import TrashList from "./Pages/Trash/trash";
-import ReviewTable from './Components/Reviews/ReviewTable'
-import Wallet from './Components/Dashboard/wallet';
-import UserDetails from "./Components/Dashboard/user_details";
-import AddReward from "./Components/Dashboard/add-reward";
-import CouponType from "./Components/Dashboard/coupon_type";
-import CreateCategory from "./Components/Dashboard/create_category";
+import ReviewTable from './Pages/Reviews/ReviewTable'
+import Wallet from './Pages/Dashboard/wallet';
+import UserDetails from "./Pages/Dashboard/user_details";
+import AddReward from "./Pages/Dashboard/add-reward";
+import CouponType from "./Pages/Dashboard/coupon_type";
+import CreateCategory from "./Pages/Dashboard/create_category";
 class App extends Component {
 	render() {
 		return (

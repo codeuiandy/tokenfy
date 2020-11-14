@@ -1,18 +1,18 @@
 import React,{useState} from 'react'
-import {Layout} from '../Layout/layout'
-import './cupon.css'
+import {Layout} from '../../Components/Layout/layout'
+import './index.css'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import ArrowDown from '../Assets/arrowDown.png'
-import calendar from '../Assets/calendar.png'
-import Remove from '../Assets/close.png'
+import calendar from '../../Components/Assets/calendar.png'
+import Remove from '../../Components/Assets/close.png'
+import { Link } from "react-router-dom";
 export default function CreateCupon(props) {
     const [activePage, setActivePage] = useState("Coupon_Properties")
     const [startDate, setstartDate] = useState(new Date())
     
     return (
         <div>
-            <Layout pageName="Edit Coupon">
+            <Layout pageName="Coupons" subPageName="Create Coupons">
                 <div className="page-router-display">
 
                     <div className="page-roter-list">
@@ -30,7 +30,7 @@ export default function CreateCupon(props) {
                                 onClick={(e)=>{setActivePage("Images_and_videos")}}
                                  className={`page-router-name 
                                 ${activePage==="Images_and_videos"?"page-router-name-active":""}`}>
-                                    Images and videos</span>
+                                    Look & Feel</span>
                             </div>
                         </div>
                         {/* <div><button></button></div> */}
@@ -168,7 +168,7 @@ export default function CreateCupon(props) {
                     {/* CUPON DROPDOWNS END HERE */}
                     <div className="cupon-text-area-box">
                               <div className="cupon-input-box textareaCon">
-                                    <label htmlFor="">Description<span>*</span></label>
+                                    <label htmlFor="">Restrictions<span>*</span></label>
                                     <div className="inputbox-cupon">
                                         <textarea type="text"/>
                                         <span className="cuponTextCount">500 <span>Characters left.</span></span>
@@ -176,11 +176,20 @@ export default function CreateCupon(props) {
                                     
                         </div>
 
-                        <div className="cupon-input-box textareaCon">
-                                    <label htmlFor="">Restrictions<span>*</span></label>
+                        <div  className="cupon-input-box textareaCon">
+                                    <label htmlFor="">Logo (PNG format only)<span>*</span></label>
                                     <div className="inputbox-cupon">
-                                        <textarea type="text"/>
-                                        <span className="cuponTextCount">500 <span>Characters left.</span></span>
+                                    <div className="upload_form marchant_upload_form">
+                    <div style={{border:"1px solid rgba(45, 78, 245, 0.08)"}} className="dragDropArea upload_col marchant-drag-and-drop">
+                        <form className="uploadCuponImage">
+                            <span>Drag and drop file here</span>
+                            <div className="upload97">or</div>
+                    
+                            <button className="uploadCupon-file" >Upload</button>
+                            <input  type="file" name="pictures"/>
+                        </form>
+                    </div>
+                    </div>
                                     </div>
                                     
                         </div>
@@ -190,8 +199,8 @@ export default function CreateCupon(props) {
 
 
             <div className="submit-cupon-button">
-                <button className="activaeSubmit-cupon">Preview</button>
-                <button className="InactivaeSubmit-cupon">Submit</button>
+                <Link to="/create_qr_coupon_two"><button className="activaeSubmit-cupon ">Next</button></Link>
+                
             </div>
                     
 

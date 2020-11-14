@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
-import {Layout} from '../Layout/layout'
+import {Layout} from '../../Components/Layout/layout'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import calendar from '../Assets/calendar.png'
+import calendar from '../../Components/Assets/calendar.png'
 export default function AddReward(props) {
     
     return (

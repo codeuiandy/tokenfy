@@ -165,7 +165,7 @@ padding-left: 12px;
                 border-radius: 5px;
                 height: 53px;
                 position: relative;
-                background: url('../Assets/arrowDown.png') no-repeat right #FFFFFF;
+                background: url('../../Components/Assets/arrowDown.png') no-repeat right #FFFFFF;
                 -webkit-appearance: none;
                 background-position-x: 90%;
                 padding-left: 13px;

@@ -1,8 +1,6 @@
 import React,{useState} from 'react'
-import {Layout} from '../Layout/layout'
-import DatePicker from "react-datepicker";
+import {Layout} from '../../Components/Layout/layout';
 import "react-datepicker/dist/react-datepicker.css";
-import calendar from '../Assets/calendar.png'
 
 export default function CreateCategory(props) {
     
@@ -12,7 +10,7 @@ export default function CreateCategory(props) {
                 <div className="row">
                     <div className="col-md-6">
                         <div className="form-group">
-                            <label htmlFor="">Coupon Code<span>*</span></label>
+                            <label htmlFor="">Category Title<span>*</span></label>
                             <div className="inputbox-cupon">
                                 <input type="text" className="form-control"/>
                             </div>
@@ -20,7 +18,7 @@ export default function CreateCategory(props) {
                     </div>
                    <div className="col-md-6">
                        <div className="form-group">
-                            <label htmlFor="">Restrictions<span>*</span></label>
+                            <label htmlFor="">Descriptions<span>*</span></label>
                             <div className="inputbox-cupon">
                                 <textarea type="text" className="form-control" rows='5' cols='6' />
                                 <span className="text-primary">500 <span>Characters left.</span></span>

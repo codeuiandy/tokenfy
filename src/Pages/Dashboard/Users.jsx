@@ -1,18 +1,19 @@
 import React,{useState} from 'react'
-import {Layout} from '../Layout/layout'
+import {Layout} from '../../Components/Layout/layout';
+import './dashboard.css'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import {Link} from 'react-router-dom';
-import User from '../Assets/user.png'
-import SearchImg from '../Assets/search.png'
-import download from '../Assets/download.png'
-export default function ViewCupon(props) {
-    const[activePage,setActivePage] = useState("Review_Category_All");
-    const[startDate,setStartDate] = useState(new Date());
+import SearchImg from '../../Components/Assets/search.png'
+import {Link} from 'react-router-dom'
+// import CuponsTable from '../Tables/customTable'
+export default function Users(props) {
+    const [activePage, setActivePage] = useState("Coupon_Properties")
+    const [startDate, setstartDate] = useState(new Date())
+    
     return (
         <div>
-            <Layout pageName="Overview" subPageName="Merchants">
-            
+            <Layout pageName="Overview" subPageName="Users">
+              
             <div style={{marginTop:"30PX"}} className="tableAction76">
                     <div style={{width:"243px"}} className="create-conpon-container">   
                         <div style={{margin:"0"}} className="cupon-input-box">
@@ -25,8 +26,7 @@ export default function ViewCupon(props) {
                             </div>
                         </div>      
                     </div>
-                    <button className="btn btn-primary btn-primary-outline mr-3">Export <span className="fa fa-download"></span></button>
-                    <Link to="/dashboard/add_merchants" className="btn btn-primary"><span className="fa fa-plus"></span> Add Merchant</Link>
+                    <button className="btn btn-primary">Export <span className="fa fa-download"></span></button>
                     <div style={{marginLeft:"auto"}} className="searchFiltert">
                     <div>
                         <input placeholder="Search keyword" type="text"/>
@@ -62,22 +62,22 @@ export default function ViewCupon(props) {
                             [...'123456'].map(()=>(
                                 <tr>
                                     <td>
-                                       <Link to="/merchants_overview"> Abu Emmanuel</Link>
+                                        <Link to="/user-details/" className="table-link">Abu Emmanuel</Link>
                                     </td>
                                     <td>
-                                        emmanuel.abuka@gmail.com
+                                        <Link to="/user-details/" className="table-link"> emmanuel.abuka@gmail.com</Link>
                                     </td>
                                     <td>
-                                        TK10001
+                                        <Link to="/user-details/" className="table-link">TK10001</Link>
                                     </td>
                                     <td className="text-center">
-                                        08140812969
+                                        <Link to="/user-details/" className="table-link">08140812969</Link>
                                     </td>
                                     <td className="text-center">
-                                        Lagos
+                                        <Link to="/user-details/" className="table-link">Lagos</Link>
                                     </td>
                                     <td className="text-center">
-                                        78
+                                        <Link to="/user-details/" className="table-link">78</Link>
                                     </td>
                                 </tr>
                             ))
@@ -85,7 +85,7 @@ export default function ViewCupon(props) {
                     </tbody>
                     </table>
                 </div>
-                        
+                           
 
             </Layout>
         </div>

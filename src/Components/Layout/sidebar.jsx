@@ -57,6 +57,7 @@ export const Sidebar=()=> {
                     <li><Link to="/dashboard-overview">Overview</Link></li>
                     <li><Link to="/dashboard/users/">Users</Link></li>
                     <li><Link to="/merchants/users_overview">Merchants</Link></li>
+                    <li><Link to="/push_notifications">Push Notifications</Link></li>
                   </div>
                 </li>
                 <li className="sidebar-menu">

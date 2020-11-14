@@ -1,13 +1,13 @@
 import React,{useState} from 'react'
-import {Layout} from '../Layout/layout'
+import {Layout} from '../../Components/Layout/layout'
 import './index.css'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import ArrowDown from '../Assets/arrowDown.png'
-import calendar from '../Assets/calendar.png'
-import Remove from '../Assets/close.png'
-import barCode from '../Assets/barCode.png'
-import kfc from '../Assets/kfc.png'
+import ArrowDown from '../../Components/Assets/arrowDown.png'
+import calendar from '../../Components/Assets/calendar.png'
+import Remove from '../../Components/Assets/close.png'
+import barCode from '../../Components/Assets/barCode.png'
+import kfc from '../../Components/Assets/kfc.png'
 
 export default function CreateCupon(props) {
     const [activePage, setActivePage] = useState("Coupon_Properties")
@@ -15,7 +15,6 @@ export default function CreateCupon(props) {
     const [couponActions, setCouponActions] = useState({
         CouponDropDown:false,
         couponType:"A",
-
         LogoDropDown:false,
         LogoName:"Jumai.png",
     })

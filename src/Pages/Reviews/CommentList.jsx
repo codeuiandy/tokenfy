@@ -1,5 +1,5 @@
 import React,{ Component } from 'react'
-import avatar from '../Assets/user.png'
+import avatar from '../../Components/Assets/user.png'
 class CommentList extends Component{
     render(){
         return(

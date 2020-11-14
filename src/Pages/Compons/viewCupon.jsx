@@ -1,11 +1,11 @@
 import React,{useState} from 'react'
-import {Layout} from '../Layout/layout'
+import {Layout} from '../../Components/Layout/layout'
 import './cupon.css'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import {Link} from 'react-router-dom';
-import User from '../Assets/user.png'
-import EditPNG from '../Assets/icons/white_edit.png';
+import User from '../../Components/Assets/user.png'
+import EditPNG from '../../Components/Assets/icons/white_edit.png';
 export default function ViewCupon(props) {
     const[activePage,setActivePage] = useState("Review_Category_All");
     const[startDate,setStartDate] = useState(new Date());
