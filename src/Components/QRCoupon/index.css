@@ -1,0 +1,125 @@
+.qr-coupon-btn-head{
+    display: flex;
+}
+
+.qr-coupon-btn-head button{
+    border-radius: 8px;
+    padding: 11px 30px 11px 30px;
+    color: white;
+    margin-bottom: 35px;
+}
+
+.qr-coupon-btn-head button:first-child{
+    background: #2D4EF5;
+    margin-right: 10px;
+}
+
+.qr-coupon-btn-head button:last-child{
+ 
+    background: #FFFFFF;
+border: 1px solid rgba(45, 78, 245, 0.08);
+color:#2D4EF5 ;
+}
+
+.create_qr_coupon_two-wrap{
+    width: fit-content;
+    border: 1px solid #2d4ef58f;
+    height: fit-content;
+    overflow: hidden;
+    padding: 19px;
+    margin-top: 39px;
+    border-radius: 3px;
+   
+}
+
+.create_qr_coupon_two-input{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.create_qr_coupon_two-input img{
+    position: absolute;
+    width: 15px;
+    height: 11px;
+    top: 58px;
+    right: 18px;
+
+}
+
+.create_qr_coupon_two-input input{
+    width: 340px;
+    height: 58px;
+    background: #FFFFFF;
+    border: 1px solid rgba(45, 78, 245, 0.08);
+    box-sizing: border-box;
+    font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+
+color: #2D4EF5;
+}
+
+.create_qr_coupon_two-input label{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.create_qr_coupon_two-options{
+    width: 60px;
+    height: 60px;
+    border-radius: 3px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+    margin-right: 9px;
+}
+
+.create_qr_coupon_two-options img{
+    width: 70%;
+    height: 70%;
+    background-size: contain;
+    
+}
+.b-code-wrap-coupon{
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+   width: fit-content;
+}
+
+.qr-drop-down-actions{
+    display: flex;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+
+.b-code-wrap-coupon span{
+   font-size: 18px;
+   font-weight: 600;
+   margin-top: 7px;
+}
+
+.create-cupon-page{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.create-cupon-page div{
+    margin-right: 10px;
+}
+
+.create_qr_coupon_two-logo{
+    background-color: transparent;
+}
+
+.create_qr_coupon_two-logo img{
+    width: 100%;
+    height: 100%;
+}

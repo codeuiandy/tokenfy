@@ -94,8 +94,9 @@ background: #FFFFFF;
 border: 1px solid rgba(45, 78, 245, 0.08);
 box-sizing: border-box;
 border-radius: 5px;
-height: 40px;
+height: 53px;
 position: relative;
+padding-left: 12px;
 }
 .react-datepicker-wrapper{
     width: 100%;
@@ -108,6 +109,8 @@ position: relative;
     border-radius: 5px;
     height: 40px;
     position: relative;
+    height: 53px;
+    padding-left: 12px;
     }
 
 .create-conpon-container .cupon-input-box input:focus{
@@ -160,11 +163,12 @@ position: relative;
                 border: 1px solid rgba(45, 78, 245, 0.08);
                 box-sizing: border-box;
                 border-radius: 5px;
-                height: 40px;
+                height: 53px;
                 position: relative;
                 background: url('../Assets/arrowDown.png') no-repeat right #FFFFFF;
                 -webkit-appearance: none;
                 background-position-x: 90%;
+                padding-left: 13px;
             }
 
             .cupon-text-area-box{

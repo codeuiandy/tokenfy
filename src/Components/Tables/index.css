@@ -1,0 +1,51 @@
+.tbTable{
+    width: 100%;
+    border-collapse: collapse;
+}
+.tbHead{
+    border-bottom: 1px solid #838690;
+    margin-bottom: 20px;
+}
+
+.tbHead th{
+    border-bottom: 1px solid #838690;
+    padding-bottom: 15px;
+    color: #838690;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.tbTable tbody tr .review-header{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.801);
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+ 
+.tbTable  tr:hover td {
+    background: #c7d4ddc7 !important;
+    border: none;
+}
+.tbTable tbody tr td{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid #838690cb;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #838690;
+    font-size: 15px;
+
+}
+
+.pending_active-tb-btn{
+    background-color: #1C9E61;
+    color: white;
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 40px;
+    border-radius: 3px;
+}

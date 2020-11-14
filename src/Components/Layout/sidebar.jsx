@@ -66,7 +66,7 @@ export const Sidebar=()=> {
                   </Link>
                 </li>
                 <li className="sidebar-menu">
-                  <Link to="/reviews">
+                  <Link to="/all_reviews">
                     <span className="sidebar-icon-container"><img className="sidebar-icon" src={ReviewPNG} /></span>
                     <span className="sidebar-menu-title">Reviews</span>
                   </Link>
@@ -77,12 +77,20 @@ export const Sidebar=()=> {
                     <span className="sidebar-menu-title">Admin</span>
                     <span className="sidebar-icon-container"><img className="sidebar-icon" src={ArrowDownPNG} /></span>
                   </div>
+
+                
+
                   <div className="collapse menu-item" id="admin-menu">
                     <li><Link to="/admin-tasks">My Tasks</Link></li>
                     <li><Link to="/create-task">Create Task</Link></li>
                     <li><Link to="/admin-list">View Admins</Link></li>
                   </div>
                 </li>
+
+                <li className="sidebar-menu">
+                  <Link to="/qr_coupons"><span className="sidebar-icon-container fa fa-cog"></span> QR Coupons</Link>
+                </li>
+
 
                 <li className="sidebar-menu">
                   <Link to="/account-settings"><span className="sidebar-icon-container fa fa-cog"></span> Settings</Link>

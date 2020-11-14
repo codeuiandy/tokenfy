@@ -18,8 +18,12 @@ import AdminList from './Pages/Admins/admin-list';
 import CreateAdmin from './Pages/Admins/create-admin';
 import AccountSettings from './Pages/Settings/settings';
 import DashboardOverview from './Pages/Dashboard/overview';
+import QrCoupons from './Components/QRCoupon/QrCoupons';
+import CreateQrCoupons from './Components/QRCoupon/createQrCoupon';
+import CreateQrCouponsTwo from './Components/QRCoupon/createCoupon_two';
 import "./App.css";
 import TrashList from "./Pages/Trash/trash";
+import ReviewTable from './Components/Reviews/ReviewTable'
 class App extends Component {
 	render() {
 		return (
@@ -32,6 +36,7 @@ class App extends Component {
 					<Route exact="/create_coupons" path="/create_coupons" component={CreateCupons}/>
 					<Route exact="/coupons" path="/coupons" component={Cupons}/>
 					<Route exact="/reviews" path="/reviews" component={Reviews}/>
+					<Route exact="/all_reviews" path="/all_reviews" component={ReviewTable} />
 					<Route exact="/view_coupon" path="/view_coupon" component={ViewCupon}/>
 					<Route exact="/edit_coupon" path="/edit_coupon" component={EditCupon}/>
 					<Route exact="/dashboard/users" path="/dashboard/users" component={DashbordUsers}/>
@@ -45,6 +50,9 @@ class App extends Component {
 					<Route exact="/account-settings" path="/account-settings" component={AccountSettings} />
 					<Route exact="/trash-list" path="/trash-list" component={TrashList} />
 					<Route exact="/dashbord-overview" path="/dashboard-overview" component={DashboardOverview} />
+					<Route exact="/qr_coupons" path="/qr_coupons" component={QrCoupons} />
+					<Route exact="/create_qr_coupon" path="/create_qr_coupon" component={CreateQrCoupons} />
+					<Route exact="/create_qr_coupon_two" path="/create_qr_coupon_two" component={CreateQrCouponsTwo} />
 					<Route path="*" component={NotFound} />
 				</Switch>
 			</Router>
