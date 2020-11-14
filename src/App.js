@@ -24,6 +24,11 @@ import CreateQrCouponsTwo from './Components/QRCoupon/createCoupon_two';
 import "./App.css";
 import TrashList from "./Pages/Trash/trash";
 import ReviewTable from './Components/Reviews/ReviewTable'
+import Wallet from './Components/Dashboard/wallet';
+import UserDetails from "./Components/Dashboard/user_details";
+import AddReward from "./Components/Dashboard/add-reward";
+import CouponType from "./Components/Dashboard/coupon_type";
+import CreateCategory from "./Components/Dashboard/create_category";
 class App extends Component {
 	render() {
 		return (
@@ -53,6 +58,11 @@ class App extends Component {
 					<Route exact="/qr_coupons" path="/qr_coupons" component={QrCoupons} />
 					<Route exact="/create_qr_coupon" path="/create_qr_coupon" component={CreateQrCoupons} />
 					<Route exact="/create_qr_coupon_two" path="/create_qr_coupon_two" component={CreateQrCouponsTwo} />
+					<Route exact="/wallet" path="/wallet" component={Wallet} />
+					<Route exact="/user-details" path="/user-details" component={UserDetails} />
+					<Route exact="/add-reward" path="/add-reward" component={AddReward} />
+					<Route exact="/create-coupon-type" path="/create-coupon-type" component={CouponType} />
+					<Route exact="/create-category" path="/create-category" component={CreateCategory} />
 					<Route path="*" component={NotFound} />
 				</Switch>
 			</Router>

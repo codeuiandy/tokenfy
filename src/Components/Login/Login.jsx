@@ -39,7 +39,7 @@ export default function Login() {
                         </div>
 
                         <div className="submit-login-details">
-                            <button><Link to="/cupons"> Sign In</Link></button>
+                            <button><Link to="/coupons"> Sign In</Link></button>
                         </div>
 
                         <div className="dont_have_account-container">

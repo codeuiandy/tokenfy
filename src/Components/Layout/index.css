@@ -101,6 +101,9 @@ margin-top: 20px;
 .slider.round:before {
   border-radius: 50%;
 }
+a.table-link,a.table-link:hover {
+  color: black;
+}
 div.avatar {
   width: 60px;
   height: 60px;

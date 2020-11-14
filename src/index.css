@@ -71,7 +71,7 @@ img.sidebar-icon {
   width: 100%;
   height: auto;
 }
-h4.bold-550,h3.bold-550,h5.bold-550,h6.bold-550,label.bold-550,p.bold-550,span.bold-550 {
+h4.bold-550,h3.bold-550,h5.bold-550,h6.bold-550,label.bold-550,p.bold-550,span.bold-550,h1.bold-550 {
   font-weight: 550;
 }
 div.menu-item {
@@ -98,16 +98,25 @@ span.sidebar-icon-container.fa {
   color: #72819d;
 }
 .card {
-  padding: 20px;
+  padding: 30px;
   background-color: white;
   border: none;
-  border-radius: 5px;
-  box-shadow: 1.5px 0px 1.5px 0px #f1e3e3;
+  border-radius: 10px;
+  box-shadow: 1.5px 5px 4.5px 3px #fff5f5;
 }
 .small.text-warning {
   color: #FFA866!important;
   font-size: small;
   font-weight: 550;
+}
+.bg-dark h1{
+  font-size: 3.5rem;
+}
+.bg-dark h1 span{
+  font-size: 2rem;
+}
+.bg-dark {
+  background-color: #1E253A !important;
 }
 
 .search-icon.input-group-text {
@@ -155,7 +164,7 @@ span.input-group-text.fa {
   font-size: larger;
 }
 
-.btn-primary {
+.btn-primary,.btn-warning {
   color: #fff;
   background-color: #516DE4;
   border-color: #516DE4;
@@ -163,6 +172,14 @@ span.input-group-text.fa {
   text-align: center;
   border-radius: 5px;
   min-width: 160px;
+}
+.btn-warning,.btn-warning:hover,.btn-warning:focus{
+  background-color: #FFA866;
+  border-color:#FFA866;
+  color:white;
+}
+div.full-width {
+  width: 100% !important;
 }
 .btn-danger,.btn-danger:hover,.btn-danger:active {
   color: #fff;
@@ -183,7 +200,7 @@ span.input-group-text.fa {
   width: 100%;
 }
 p{
-  font-size : 14px;
+  font-size : 13px;
   margin-top: 0;
   margin-bottom: 0px;
 }
@@ -269,12 +286,39 @@ button.delete-action-button{
   margin: 40px auto;
 }
 
+
 .Table-sec .table-bordered {
   border: none;
 }
 button.btn.btn-primary.btn-primary-outline {
   background-color: white;
   color: #516de4;
+}
+a.view-more-link.text-primary {
+  font-size: 14px;
+  font-weight: 550;
+}
+.table-no-bordered td, .table-no-bordered th {
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 33px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #efdddd;
+  border-top: 1px solid #efdddd;
+}
+.item-card{
+  min-height: 250px;
+}
+.bg-primary {
+  background-color: #2D4EF5 !important;
+  color: white;
+}
+.icon-image-container-no-margin {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 0px;
 }
 @media(max-width:725px){
   .mobile-mt-20{

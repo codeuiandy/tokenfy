@@ -64,22 +64,22 @@ export default function Users(props) {
                             [...'123456'].map(()=>(
                                 <tr>
                                     <td>
-                                        Abu Emmanuel
+                                        <Link to="/user-details/" className="table-link">Abu Emmanuel</Link>
                                     </td>
                                     <td>
-                                        emmanuel.abuka@gmail.com
+                                        <Link to="/user-details/" className="table-link"> emmanuel.abuka@gmail.com</Link>
                                     </td>
                                     <td>
-                                        TK10001
+                                        <Link to="/user-details/" className="table-link">TK10001</Link>
                                     </td>
                                     <td className="text-center">
-                                        08140812969
+                                        <Link to="/user-details/" className="table-link">08140812969</Link>
                                     </td>
                                     <td className="text-center">
-                                        Lagos
+                                        <Link to="/user-details/" className="table-link">Lagos</Link>
                                     </td>
                                     <td className="text-center">
-                                        78
+                                        <Link to="/user-details/" className="table-link">78</Link>
                                     </td>
                                 </tr>
                             ))
