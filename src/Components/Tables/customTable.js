@@ -214,3 +214,4 @@ function Wrapper(props) {
 // storiesOf(categoryName, module).add('Testing render count', () => <Wrapper />);
 
 export default Wrapper;
+

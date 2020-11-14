@@ -108,3 +108,10 @@ border-radius: 5px;
 height: 95%;
 width: 90%;
 }
+
+.review-header-star img{
+width: 15px;
+height: 15px;
+margin-right: 5px;
+
+}
