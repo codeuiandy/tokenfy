@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import {useTable} from 'react-table';
 
 export default function Coupon_table() {
@@ -12,6 +12,78 @@ export default function Coupon_table() {
                 Category:'Health & Finance',
                 expiryDate:'20/10/2021',
                 status:'Inactive'
+            },
+            {
+                merchant:'Uber',
+                approvalID:'Adekunle Timilehin',
+                type:'Cashback',
+                Limits:178,
+                Category:'Travels',
+                expiryDate:'20/10/2021',
+                status:'Active'
+            },
+            {
+                merchant:'Tastee',
+                approvalID:'Alo Jeremiah',
+                type:'Online',
+                Limits:178,
+                Category:'Dining & Takeout',
+                expiryDate:'Not Stated',
+                status:'Pending'
+            },
+            {
+                merchant:'Jumia',
+                approvalID:'Alo Jeremiah',
+                type:'Cashback',
+                Limits:178,
+                Category:'Clothing',
+                expiryDate:'Not Stated',
+                status:'Pending'
+            },
+            {
+                merchant:'Oando',
+                approvalID:'Odeyemi Peace',
+                type:'In-store',
+                Limits:178,
+                Category:'Travels',
+                expiryDate:'20/10/2021',
+                status:'Active'
+            },
+            {
+                merchant:'Vaseline',
+                approvalID:'Echecu Florish',
+                type:'In-Store',
+                Limits:178,
+                Category:'Makeup & Skincare',
+                expiryDate:'20/10/2021',
+                status:'Active'
+            },
+            {
+                merchant:'Coca-Cola',
+                approvalID:'Abudu Benedict',
+                type:'In-store',
+                Limits:178,
+                Category:'Makeup & Skincare',
+                expiryDate:'20/10/2021',
+                status:'Active'
+            },
+            {
+                merchant:'Coca-Cola',
+                approvalID:'Abudu Benedict',
+                type:'In-store',
+                Limits:178,
+                Category:'Cashback Offers',
+                expiryDate:'20/10/2021',
+                status:'Active'
+            },
+            {
+                merchant:'Coca-Cola',
+                approvalID:'Echefu Flourish',
+                type:'In-store',
+                Limits:178,
+                Category:'Cashback Offers',
+                expiryDate:'20/10/2021',
+                status:'Active'
             },
         ],
         []
