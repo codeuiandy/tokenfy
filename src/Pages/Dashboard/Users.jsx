@@ -1,14 +1,42 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import {Layout} from '../../Components/Layout/layout';
 import './dashboard.css'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import SearchImg from '../../Components/Assets/search.png'
 import {Link} from 'react-router-dom'
-// import CuponsTable from '../Tables/customTable'
+import {httpGet, httpPatch, httpPostFormData,httpPost, httpDelete} from '../../Components/helpers/httpMethods'
+import {hideLoader, showLoader} from '../../Components/helpers/loader'
+import {NotificationManager} from 'react-notifications'
+
 export default function Users(props) {
+    useEffect(() => {
+    
+        getCategories()
+    }, [])
+
+    const [users, setUsers] = useState([])
+
     const [activePage, setActivePage] = useState("Coupon_Properties")
     const [startDate, setstartDate] = useState(new Date())
+
+    const  getCategories =async()=>{
+
+        try {
+          showLoader()
+            const res = await httpGet(`admin/user/all/`)
+            if (res.status === 200) {
+            
+                setUsers(res.data.data.categories)
+                console.log(res.data.data.categories)
+            }
+            console.log(res)
+            hideLoader()
+        } catch (error) {
+          hideLoader()
+        }
+    }
+    
     
     return (
         <div>

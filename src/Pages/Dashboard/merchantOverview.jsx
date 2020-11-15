@@ -1,12 +1,39 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import {Layout} from '../../Components/Layout/layout';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import {Link} from 'react-router-dom';
 import User from '../../Components/Assets/user.png'
 import EditPNG from '../../Components/Assets/icons/white_edit.png';
+import {httpGet, httpPatch, httpPostFormData,httpPost, httpDelete} from '../../Components/helpers/httpMethods'
+import {hideLoader, showLoader} from '../../Components/helpers/loader'
+import {NotificationManager} from 'react-notifications'
 
 export default function MerchantOverview(props) {
+    const [Merchants, settMerchants] = useState([])
+
+    useEffect(() => {
+    
+        getMerchant()
+    }, [])
+
+    const  getMerchant =async()=>{
+
+        try {
+          showLoader()
+            const res = await httpGet(`admin/merchant/all/`)
+            if (res.status === 200) {
+            
+                settMerchants(res.data.data.categories)
+                console.log(res.data.data.categories)
+            }
+            console.log(res)
+            hideLoader()
+        } catch (error) {
+          hideLoader()
+        }
+    }
+
     return (
         <div>
             <Layout pageName="Overview" subPageName="Merchants">

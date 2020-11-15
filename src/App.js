@@ -29,9 +29,13 @@ import UserDetails from "./Pages/Dashboard/user_details";
 import AddReward from "./Pages/Dashboard/add-reward";
 import CouponType from "./Pages/Dashboard/coupon_type";
 import CreateCategory from "./Pages/Dashboard/create_category";
+import 'react-notifications/lib/notifications.css';
+import {NotificationManager,NotificationContainer} from 'react-notifications'
 class App extends Component {
 	render() {
 		return (
+	<React.Fragment>
+			<NotificationContainer/>
 			<Router>
 				{/* <NotificationContainer /> */}
 				<Switch>
@@ -65,7 +69,8 @@ class App extends Component {
 					<Route exact="/create-category" path="/create-category" component={CreateCategory} />
 					<Route path="*" component={NotFound} />
 				</Switch>
-			</Router>
+			</Router>	
+</React.Fragment>
 		);
 	}
 }
