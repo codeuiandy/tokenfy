@@ -6,6 +6,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import ArrowDown from '../Assets/arrowDown.png'
 import calendar from '../Assets/calendar.png'
 import {Link} from 'react-router-dom'
+import Coupon_table from './coupon_table'
 // import CuponsTable from '../Tables/customTable'
 export default function CreateCupon(props) {
     const [activePage, setActivePage] = useState("Coupon_Properties")
@@ -40,7 +41,8 @@ export default function CreateCupon(props) {
                     <div className="pg-dimacation"></div>
 
                 </div>
-                           
+                
+                <Coupon_table />
 
             </Layout>
         </div>
