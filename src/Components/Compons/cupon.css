@@ -467,3 +467,29 @@ color: #838690;
 .docUploadArea span{
     color:#2D3EF5;
 }
+
+/* Table Styling */
+.table_container{
+    overflow-x:auto;
+    border-radius:5px;
+    max-width:100%;
+    padding:5% 10%;
+    margin:1rem 1.5rem;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+thead>tr{
+    width:5rem;
+}
+thead>tr>th{
+    margin:0 3rem;
+    color:rgba(128, 128, 128, 0.685);
+    width:15rem;
+    text-transform:uppercase;
+}
+tbody tr{
+    border-bottom: 0.3px solid rgba(0,0,0,0.25);
+    height:3rem;
+}
+tbody td{
+    margin:0 10px;
+}

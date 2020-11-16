@@ -42,7 +42,9 @@ export default function CreateCupon(props) {
 
                 </div>
                 
-                <Coupon_table />
+                <div className="table_container">
+                    <Coupon_table />
+                </div>
 
             </Layout>
         </div>
