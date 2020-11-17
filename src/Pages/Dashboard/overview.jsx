@@ -25,7 +25,7 @@ const DashboardOverview = () => {
         try {
           showLoader()
             const res1 = await httpGet(`admin/overview/`)
-            const res2 = await httpGet(`couponType/getAll/`)
+            const res2 = await httpGet(`coupon_type/retrieve/`)
             const res3 = await httpGet(`admin/categories/`)
               const all = await axios.all([res1, res2, res3])
               console.log(all[2])

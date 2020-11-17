@@ -21,7 +21,7 @@ export default function MerchantOverview(props) {
 
         try {
           showLoader()
-            const res = await httpGet(`admin/merchant/all/`)
+            const res = await httpGet(`admin/all_mercants/`)
             if (res.status === 200) {
             
                 settMerchants(res.data.data.categories)

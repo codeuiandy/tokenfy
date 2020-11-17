@@ -1,15 +1,40 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import {Layout} from '../../Components/Layout/layout'
 import './cupon.css'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import {Link} from 'react-router-dom'
 import SearchImg from '../../Components/Assets/search.png'
-// import CuponsTable from '../Tables/customTable'
+import {httpGet, httpPatch, httpPostFormData,httpPost, httpDelete} from '../../Components/helpers/httpMethods'
+import {hideLoader, showLoader} from '../../Components/helpers/loader'
+import {NotificationManager} from 'react-notifications'
+import CouponsTable from '../../Components/Tables/Coupons'
 export default function CreateCupon(props) {
     const [activePage, setActivePage] = useState("Coupon_Properties")
     const [startDate, setstartDate] = useState(new Date())
+    useEffect(() => {
     
+        GetUsers()
+    }, [])
+
+    const [users, setUsers] = useState([])
+
+    const  GetUsers =async()=>{
+
+        try {
+          showLoader()
+            const res = await httpGet(`admin/all_users`)
+            if (res.status === 200) {
+            
+                setUsers(res.data.data.data)
+                console.log(res.data.data)
+            }
+            console.log(res.data.data.data)
+            hideLoader()
+        } catch (error) {
+          hideLoader()
+        }
+    }
     return (
         <div>
             <Layout pageName="Coupons">
@@ -63,7 +88,7 @@ export default function CreateCupon(props) {
 
                 </div>
 
-                <div style={{marginTop:"30PX"}} className="tableAction76">
+                {/* <div style={{marginTop:"30PX"}} className="tableAction76">
                     <div style={{width:"243px"}} className="create-conpon-container">   
                         <div style={{margin:"0"}} className="cupon-input-box">
                             <div style={{width:"220px",height:"50px"}} className="inputbox-cupon">
@@ -83,10 +108,12 @@ export default function CreateCupon(props) {
                     </div>
                     
                 </div>
-            </div>
+            </div> */}
                 <div className="Table-sec">
 
-                <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                    <CouponsTable/>
+
+                {/* <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
                     <thead className="mb-20">
                         <tr>
                             <th className="th-sm">MERCHANTS
@@ -140,7 +167,7 @@ export default function CreateCupon(props) {
                             ))
                         }
                     </tbody>
-                    </table>
+                    </table> */}
                 </div>
                            
             </Layout>

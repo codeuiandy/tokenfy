@@ -325,3 +325,7 @@ a.view-more-link.text-primary {
     margin-top: 20px;
   }
 }
+
+.MuiPaper-elevation2{
+  box-shadow: 0, 0, 0 !important;
+}

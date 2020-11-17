@@ -15,7 +15,7 @@ export default function CreateCategory(props) {
            e.preventDefault();
            try {
              showLoader()
-              let res = await httpPost("create/category",createcategory)
+              let res = await httpPost("admin/create/category",createcategory)
               console.log("res status",res) 
               if (res.status === 201 || res.status === 200) {
                       hideLoader()

@@ -1,18 +1,76 @@
 import React,{useState} from 'react'
 import {Layout} from '../../Components/Layout/layout'
 import "react-datepicker/dist/react-datepicker.css";
-
+import {httpGet, httpPatch, httpPostFormData,httpPost, httpDelete} from '../../Components/helpers/httpMethods'
+import {hideLoader, showLoader} from '../../Components/helpers/loader'
+import {NotificationManager} from 'react-notifications'
 export default function CouponType(props) {
     
+    const [createCouponType, setCreateCouponType] = useState({
+        couponType: "",
+        description: ""})
+    
+    const handleSubmit=async(e)=>{
+        e.preventDefault();
+                
+           e.preventDefault();
+           try {
+             showLoader()
+              let res = await httpPost("coupon_type/create",createCouponType)
+              console.log("res status",res) 
+              if (res.status === 201 || res.status === 200) {
+                      hideLoader()
+                      setCreateCouponType({
+                        couponType: "",
+                      description: ""
+                    })
+             
+         
+               NotificationManager.success(
+                  "CouponType created successfully",
+                 "Yepp",
+                 4000
+             );
+
+             
+            
+              }
+              
+             
+           
+               hideLoader()
+         } catch (error) {
+             console.log(error.response)
+             NotificationManager.error(
+                 error,
+                "Opps",
+                3000
+            );
+             hideLoader()
+       
+         }
+        }
+       
+  
+
+    
+    
+    const  handleChange=(e)=>{
+
+            setCreateCouponType({...createCouponType, [e.target.name]: e.target.value })
+            console.log(createCouponType)
+  
+       }
+    
     return (
-        <div>
-            <Layout pageName="Create" subPageName="Coupon type">
+        <form onSubmit={handleSubmit}>
+            <Layout pageName="Create" subPageName="CouponType">
                 <div className="row">
                     <div className="col-md-6">
                         <div className="form-group">
-                            <label htmlFor="">Coupon type<span>*</span></label>
+                            <label htmlFor="">CouponType Title<span>*</span></label>
                             <div className="inputbox-cupon">
-                                <input type="text" className="form-control"/>
+                                <input value={createCouponType.couponType} name="couponType" onChange={handleChange} required type="text" className="form-control"/>
                             </div>
                         </div>
                     </div>
@@ -20,7 +78,7 @@ export default function CouponType(props) {
                        <div className="form-group">
                             <label htmlFor="">Descriptions<span>*</span></label>
                             <div className="inputbox-cupon">
-                                <textarea type="text" className="form-control" rows='5' cols='6' />
+                                <textarea value={createCouponType.description}  name="description" onChange={handleChange} required type="text" className="form-control" rows='5' cols='6' />
                                 <span className="text-primary">500 <span>Characters left.</span></span>
                             </div>
                        </div>
@@ -32,7 +90,8 @@ export default function CouponType(props) {
                 </div>
         
             </Layout>
-        </div>
+        </form>
+        
     )
 }
 

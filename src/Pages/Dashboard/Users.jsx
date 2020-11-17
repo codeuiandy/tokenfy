@@ -8,11 +8,12 @@ import {Link} from 'react-router-dom'
 import {httpGet, httpPatch, httpPostFormData,httpPost, httpDelete} from '../../Components/helpers/httpMethods'
 import {hideLoader, showLoader} from '../../Components/helpers/loader'
 import {NotificationManager} from 'react-notifications'
+import UsersTable from '../../Components/Tables/UsersTable'
 
 export default function Users(props) {
     useEffect(() => {
     
-        getCategories()
+        GetUsers()
     }, [])
 
     const [users, setUsers] = useState([])
@@ -20,17 +21,17 @@ export default function Users(props) {
     const [activePage, setActivePage] = useState("Coupon_Properties")
     const [startDate, setstartDate] = useState(new Date())
 
-    const  getCategories =async()=>{
+    const  GetUsers =async()=>{
 
         try {
           showLoader()
-            const res = await httpGet(`admin/user/all/`)
+            const res = await httpGet(`admin/all_users`)
             if (res.status === 200) {
             
-                setUsers(res.data.data.categories)
-                console.log(res.data.data.categories)
+                setUsers(res.data.data.data)
+                console.log(res.data.data)
             }
-            console.log(res)
+            console.log(res.data.data.data)
             hideLoader()
         } catch (error) {
           hideLoader()
@@ -41,8 +42,9 @@ export default function Users(props) {
     return (
         <div>
             <Layout pageName="Overview" subPageName="Users">
-              
-            <div style={{marginTop:"30PX"}} className="tableAction76">
+
+            {/* <div style={{marginTop:"30PX"}} className="tableAction76">
+               
                     <div style={{width:"243px"}} className="create-conpon-container">   
                         <div style={{margin:"0"}} className="cupon-input-box">
                             <div style={{width:"220px",height:"50px"}} className="inputbox-cupon">
@@ -62,56 +64,9 @@ export default function Users(props) {
                     </div>
                     
                 </div>
-            </div>
+            </div> */}
                 <div className="Table-sec">
-                <table id="dtBasicExample" class="table table-striped table-bordered" cellspacing="0" width="100%">
-                    <thead className="mb-20">
-                        <tr>
-                            <th className="th-sm">USER
-                            </th>
-                            <th className="th-sm">EMAIL
-                            </th>
-                            <th className="th-sm">
-                                ID
-                            </th>
-                            <th className="th-sm">
-                                PHONE NUMBER
-                            </th>
-                            <th className="th-sm text-center">
-                                LOCATION
-                            </th>
-                            <th className="th-sm text-center">
-                                CLAIMS
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            [...'123456'].map(()=>(
-                                <tr>
-                                    <td>
-                                        <Link to="/user-details/" className="table-link">Abu Emmanuel</Link>
-                                    </td>
-                                    <td>
-                                        <Link to="/user-details/" className="table-link"> emmanuel.abuka@gmail.com</Link>
-                                    </td>
-                                    <td>
-                                        <Link to="/user-details/" className="table-link">TK10001</Link>
-                                    </td>
-                                    <td className="text-center">
-                                        <Link to="/user-details/" className="table-link">08140812969</Link>
-                                    </td>
-                                    <td className="text-center">
-                                        <Link to="/user-details/" className="table-link">Lagos</Link>
-                                    </td>
-                                    <td className="text-center">
-                                        <Link to="/user-details/" className="table-link">78</Link>
-                                    </td>
-                                </tr>
-                            ))
-                        }
-                    </tbody>
-                    </table>
+                <UsersTable users={users}/>
                 </div>
                            
 
